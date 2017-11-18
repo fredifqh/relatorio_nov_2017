@@ -1,0 +1,309 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage{graphicx}
+\usepackage{fourier}
+\usepackage{anysize}
+\usepackage{amsmath}
+\usepackage{booktabs}          %Para ter mais opcoes nas tabelas
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+%\usepackage{pdfpages}
+\usepackage{verbatim}
+\usepackage[colorlinks]{hyperref}
+\usepackage{multirow}
+%\usepackage[comma]{natbib}
+\usepackage{comment}
+\usepackage[compress,comma,]{natbib}
+\usepackage[bottom]{footmisc}    %footnote in bottom position
+
+
+\marginsize{2.5cm}{2cm}{2cm}{2cm}
+
+
+\renewcommand{\baselinestretch}{1.2}
+
+\begin{document}
+\renewcommand{\figurename}{\textsc{Figura}}
+\renewcommand{\tablename}{\textsc{Tabela}}
+\renewcommand{\refname}{Refer\^encias}
+
+\numberwithin{table}{section}
+
+\input{caratula.tex}
+
+\section{Projeto}
+
+\subsection{Objetivo científico}
+%La técnica de ocultación estelar además de permitir obtener el diametro 
+%En los últimos años la técnica de ocultación estelar ha permitido revelar 
+
+Los TNOs y Centauros son pequeños objetos ($<$ 20400 km) del sistema solar, que por estar muy alejados del Sol (15 - 45 ua) poseen poco brillo ( Mag $>$ 20). Estas características hacen que determinar su astrometría no sea una tarea sencilla. El proceso para obtener la astrometría consiste en tomar imagenes de estos cuerpos conteniendo estrellas a su alrededor (estrellas de referencia). Luego, utilizando información de las estrellas, obtenidas de catalagos estelares, se determina su astrometría. Por lo tanto, la astrometría depende de la calidad de las imagenes tomados desde telescopios en tierra y de la precición astrometrica de las estrellas de campo. En este sentido los dados obtenidos por la misión astrométrica GAIA, la cual proveera la astrometría para aproxidamente um bilhão de estrelas con magnitudes até 20 com uma precição en el orden de microsegundos ($\mu$as), permitira mejorar significativamente la precisión astrométrica de  los TNOs y Centauros.
+
+Por lo mencionado, el presente trabajo tiene como objetivo cientifico, \textbf{determinar la astrometría de TNOs y Centauros usando imagens recentes e de epoca antiga e a solución astrométrica GAIA com estrelas contemplando los 5 parametros - posições, paralaxes, e movimentos proprios - o qual será liberada en Junio del 2017}.
+
+\begin{comment}
+ permitira mejorar significativamente la precisión astrométrica de estos de los TNOs y Centauros.    ... Estos resultados mejorarán considerablemente con los datos que esta obteniendo la misión astrométrica GAIA e que a segunda liberação de dados sera Junio do 2017, la cual proveera la astrometría para aproxidamente 1 000 millones de estrelas con magnitudes menor que 20 (G $<$ 20) en el orden de microsegundos ($\mu$as), y esto permitirá obtener la astrometría de estos objetos en el orden de ().
+
+
+La astrometría de TNOs y Centauros no es una tarea sencilla puesto que estos son objetos pequeños ()
+En la actualidad existe una gran expectativa por los datos que estan siendo obtenidos por la misión astrométrica GAIA, la cual proveera la astrometría en el orden de microsegundos ($\mu$as) para aproxidamente 1 000 millones de estrelas con magnitudes menor que 20 (G < 20).   
+En los últimos años, resultados importantes sobre TNOs e Centauros han sido obtenidos a través de la técnica de ocultación estelar y técnicas complementarias. Estas técnicas han permitido caracterizar estos objetos y descubrir características muy particulares, como la presencia de atmosfera y anillos en torno de algunos de estos objetos. No obstante, la predicción de ocultaciones no es una tarea facil ya que esta depende de la precisión astrometríca de la estrella, la cual es suministrada por catalogos estelares, y del objeto ocultador, que por ser muy pequeños (< 2400 km), distantes del Sol (15 - 45 UA) y con bajo brillo (magnitudes 18 - 23) no son bien determinados. Para determinar la astrometría de TNOs se realizan programas de observación con telescopios en tierra y se utilizan estrellas de referencia de catalogos estelares. Puesto que la astrometría de estos objetos depende de la precisión astrométrica de la estrellas de referencia, esta mejorará considerablemente con los datos que viene obteniendo el satelite GAIA. 
+
+Por lo mencionado, el objetivo cientifico del presente trabajo es, \textbf{obter a major precisão astrométrica de TNOs e Centauros utilizando datos de observación terrestre tomados en programas anteriores y datos del satelite GAIA}, os quais serán liberados en Junio del 2017.
+
+
+%con el  Por lo tanto, cuanto mayor sea la precisión astrometrica de las estrellas mayor será la precisión astrométrica del objeto y 
+
+%La precisión astrométrica de las estrellas aumentará considerablemente con los dados que seran suministrados por el satelite GAIA 
+\end{comment}
+
+\subsection{Estado da arte}
+
+Objetos Transnetunianos (TNOs) s\~ao corpos que orbitam o Sol al\'em da \'orbita de Netuno \citep{Jewitt:book}. Esses objetos formam o chamado cintur\~ao de Kuiper, um cintur\~ao composto de pequenos corpos gelados \citep{2016ApJ...825L..13S}. \citet{2008ssbn.book...43G} adota um valor um tanto arbitr\'ario para o semieixo maior $a = 2 000$ UA (Unidades astron\^omicas) para definir formalmente o in\'icio da nuvem interna de Oort (e, assim, o fim do cintur\~ao de Kuiper). 
+
+As propriedades físicas e din\^amicas desses corpos fornecem informa\c{c}\~oes para desvendar a hist\'oria e evolução do Sistema Solar exterior. Como estes objetos est\~ao a mais de 30 UA do Sol, foram pouco influenciados pela radia\c{c}\~ao solar, portanto, conservam suas propriedades f\'isicas primordiais, as quais fornecem informa\c{c}\~oes sobre os processos t\'ermicos e qu\'imicos na forma\c{c}\~ao do disco protoplanet\'ario (\cite{Barucci}, Part III: \textit{Bulk Properties} e Part IV: \textit{Physical Properties}).
+
+Centauros s\~ao uma popula\c{c}\~ao de \'orbita inst\'avel entre J\'upiter e Netuno. Eles partilham uma origem comum com os TNOs, portanto, teriam propriedades f\'isicas similares.
+
+A oculta\c{c}\~ao estelar \'e uma t\'ecnica que permite determina\c{c}\~ao de tamanhos de TNOs/Centauros com precis\~ao quilom\'etrica \citep{2011Natur.478..493S, 2011epsc.conf.1060B, 2010DPS....42.2302E, 2011epsc.conf..704O}, investiga\c{c}\~ao de suas vizinhan\c{c}as (descobertas de an\'eis \citep{2014AGUFM.P43F..01B}, sat\'elites), \'e sens\'ivel \`a presen\c{c}a de atmosferas t\^enues (ver por exemplo: \citet{2015DPS....4720009D}).
+
+Para poder observar uma oculta\c{c}\~ao estelar por algum TNO, \'e preciso efetuar a previs\~ao do evento, que consiste em dizer quando e onde, sobre a Terra, a sombra resultante do evento de ocultação será visível. Para isso, são necessárias posições estelares e efemérides precisas \citep{2010A&A...515A..32A, 2012A&A...541A.142A, 2014A&A...561A..37C}. No entanto, as ocultações estelares são raras e suas predições ainda estão sujeitas a grandes (> 50 mas) incertezas nas posições relativas da estrela e do TNO, em especial se o TNO est\'a posicionado longe do disco da Via-L\'actea. Por outro lado, as complicações são grandes quando o objeto está num campo muito denso, por conta da dificuldade em se separar o fotocentro dos objetos. Esta dificuldade de previs\~ao se deve tamb\'em aos erros inerentes \`as posi\c{c}\~oes aparentes das estrelas, incluindo o seu movimento pr\'oprio e as incertezas das \'orbitas dos TNOs. No caso das estrelas, um grande salto será dado já com a publicação do primeiro catálogo GAIA, que fornecerá as posi\c{c}\~oes das estrelas at\'e magnitude 20 com acurácia melhor que o milissegundo de arco. No caso das \'orbitas dos TNOs, \'e preciso ter a maior quantidade de observa\c{c}\~oes astrom\'etricas poss\'iveis destes objetos, para fazer um bom ajuste das \'orbitas e quanto mais pr\'oxima a observa\c{c}\~ao de refinamento estiver do evento de oculta\c{c}\~ao, melhor ser\'a a previs\~ao deste.
+
+O projeto de doutorado consiste em desenvolver ferramentas computacionais para ter uma metodologia sistem\'atica para se estudar o Sistema Solar exterior através de ocultações estelares a partir de grandes massas de dados oriundas de levantamentos profundos do céu.
+
+\subsection{Metodologia}
+
+Utilizando as observa\c{c}\~oes feitas pelo projeto \textit{DES} e a experi\^encia do \textit{LIneA}\footnote{Laborat\'orio Interinstitucional de e-Astronomia} no trabalho com grandes massas de dados, nos serviremos de um conjunto de pouco mais de 66 mil imagens (uma imagem \'e dada por um mosaico com 62 CCDs) do c\'eu do hemisf\'erio sul celeste desde setembro de 2013 at\'e fevereiro de 2016, usando a c\^amera DECam instalada no telescópio Blanco no CTIO, para desenvolvermos nosso trabalho. Estima-se que algumas centenas de TNOs e Centauros com V<23 estejam contidos nessas imagens.
+
+\begin{figure}[H]
+\centering \includegraphics[width = 0.7\textwidth, viewport=0 70 500 340, clip]{pointings.pdf}
+\caption{Proje\c{c}\~ao Hammer-Aitoff da \'area coberta pelo DES (Setembro de 2013 at\'e Fevereiro de 2016), com uma densidade de apontamentos crescendo do
+vermelho at\'e o azul.}
+\label{fig:cobertura}
+\end{figure}
+
+
+Para cumprir nossos objetivos n\'os temos uma serie de ferramentas e servi\c{c}os. Elas s\~ao:
+
+\begin{description}
+\item[easyaccess:] Int\'erprete de linha de comando \textit{SQL} desenvolvida pelo DES para pesquisas astron\^omicas na base de dados do DES. Mais informa\c{c}\~ao no site \url{https://github.com/mgckind/easyaccess}
+\item[SkyBoT:] Sky Body Tracker \citep{2006ASPC..351..367B} \'e um servi\c{c}o fornecido pelo observat\'orio de Paris para identificar os objetos conhecidos do Sistema Solar numa certa regi\~ao do C\'eu, numa espec\'ifica data.
+\item[PRAIA:] Plataforma para Redu\c{c}\~ao Autom\'atica de Imagens Astron\^omicas \citep{2011gfun.conf...85A}, desenvolvido pelo Dr. Marcelo Assafin (OV/UFRJ). Ele faz a redu\c{c}\~ao astrométrica usando as posi\c{c}\~oes das estrelas como refer\^encia os quais s\~ao obtidas de cat\'alogos estelares.
+\item[NIMA:] Numerical Integration of the Motion of an Asteroid \citep{2015A&A...584A..96D}, desenvolvido pelo Dr. Josselin Desmars, refina a \'orbita j\'a existente de objetos do Sistema Solar a partir de novas posi\c{c}\~oes astrom\'etricas. Para isso usa o integrador num\'erico de Gauss-Radau de ordem 15.
+\item[Python:] Linguagem de programa\c{c}\~ao \'util para gerenciar os programas acima mencionados automatizando os procedimentos. 
+\end{description}
+
+A metodologia consiste basicamente em:
+
+\begin{enumerate}
+\item Usar a ferramenta \textit{easyaccess} para baixar a informa\c{c}\~ao necess\'aria (posi\c{c}\~ao, tamanho do campo, datas, etc.) de todos os CCDs armazenados na base de dados do \textit{DES}.
+\item Usar o servi\c{c}o SkyBoT para identificar os objetos conhecidos do Sistema Solar na regi\~ao de cobertura do \textit{DES} (informa\c{c}\~ao obtida no item anterior).
+\item Recuperar imagens que contem observa\c{c}\~oes de TNOs e obter delas os par\^ametros de calibra\c{c}\~ao fotom\'etrica e astrom\'etrica.
+\item Fazer a astrometria desde objeto levando em conta as deforma\c{c}\~oes locais do CCD onde se encontra a imagem para isso vamos usar o pacote PRAIA.
+\item Refinar as \'orbitas dos TNOs usando o pacote NIMA.
+\item Desenvolver procedimentos para avaliar a qualidade dos resultados obtidos.
+\end{enumerate}
+
+\subsection{Resultados esperados}
+
+Depois de aplicar a metodologia descrita acima n\'os esperamos ter os seguintes resultados:
+\begin{itemize}
+\item Um censo e estudo dos asteroides detectados nas imagens do \textit{DES}.
+\item Astrometria, fotometria e refinamento de \'orbitas dos TNOs e Centauros detectados.
+\item Mapas de previs\~oes de oculta\c{c}\~oes estelares pelos TNOs e Centauros.
+\item Processos automatizados para analisar grandes quantidades de massas de dados que fa\c{c}am os item anteriores,
+\end{itemize}
+
+Tendo as ferramentas desenvolvidas poder\~ao ser analisadas grandes quantidades de massas de dados, o que significa que vamos ter algumas centenas de observa\c{c}\~oes de TNOs e fazendo a astrometria ser\'a poss\'ivel obter posi\c{c}\~oes precisas que v\~ao a melhorar as \'orbitas e assim poder ter boas previs\~oes de oculta\c{c}\~oes estelares. 
+
+\newpage
+
+\section{Informa\c{c}\~oes curriculares}
+
+\subsection{Disciplinas cursadas}
+
+\begin{center}
+\begin{tabular}{clccc}
+\toprule
+\textbf{N}&$\hspace{2cm}$\textbf{Disciplina} &\textbf{Ano/Semestre}&\textbf{Conceito}& \textbf{Cr\'editos} \\ \midrule
+1 & Astronomia observacional                                             & 2016/2 & A & 04 \\ 
+2 & Astroestatística                                                     & 2016/2 & A & 02 \\ 
+3 & Astrofísica Planetária                                               & 2016/2 & B & 04 \\ 
+4 & Tópicos em Formação e Evolução Primordial do Sistema Solar           & 2016/2 & B & 02 \\
+5 & Astronomia de posição                                                & 2017/1 & A & 04 \\ 
+6 & Astronomia Dinâmica                                                  & 2017/1 & A & 04 \\ 
+7 & Métodos Númericos em Astronomia Dinâmica                             & 2017/1 & A & 04 \\ \midrule 
+\multicolumn{4}{c}{\textbf{Total de cr\'editos obtidos}}               & \textbf{24} \\ \bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Cursos e reuni\~oes cient\'ificas}
+
+\begin{itemize}
+\item Participa\c{c}\~ao na XL REUNI\~AO ANUAL DA SAB\\
+Data: 28 a 31 de agosto de 2016\\
+Local: Centro de Conven\c{c}\~oes de Ribeir\~ao Preto, Ribeir\~ao Preto, SP.\\
+Poster apresentado: DARK ENERGY SURVEY: Astrometria de TNOs/Centauros e censo dos objetos do Sistema Solar observados pelo levantamento.\\
+Autores:  M. Banda, J. I. B. Camargo, R. Ogando, R. Vieira-Martins,  M. Assafin, M. Carrasco Kind, F. Braga-Ribas, J. Desmars, L. A. N. da Costa, M. A. G. Maia.
+\item Participa\c{c}\~ao do XVIII Col\'oquio Brasileiro de Din\^amica Orbital (CBDO)\\
+Data: 28 de novembro a 02 de dezembro de 2016\\
+Local: Hotel Majestic, \'Aguas de Lind\'oia, SP.\\
+Poster apresentado: Astrometry and Orbital refinement of TNOs/Centaurs identified in Dark Energy Survey.\\
+Autores:  M. Banda, J. I. B. Camargo, R. Ogando, R. Vieira-Martins,  M. Assafin, M. Carrasco Kind, F. Braga-Ribas, J. Desmars, L. A. N. da Costa, M. A. G. Maia.
+\item Participa\c{c}\~ao da escola XXI Ciclo de Cursos Especiais\\
+Data: 26 a 29 de setembro de 2016\\
+Local: Observat\'orio Nacional, Rio de Janeiro, RJ\\
+Temas apresentados:
+\begin{enumerate}
+\item \textit{Computational Cosmology: Simulating Cosmic Structures}. Prof. August Evrard (University of Michigan, US).
+\item \textit{Comets: Origin, Evolution and Interrelations}. Prof. Julio Fern\'andez (University of the Republic, Uruguay).
+\item \textit{Advanced stellar evolution: basic properties, nucleosynthesis, and final fates}. Prof. Paola Marigo (University of Padova, Italia).
+\end{enumerate}
+\item Apresenta\c{c}\~ao de semin\'ario \\
+Evento: Semin\'ario anual de estudantes\\
+Data: 7 a 9 de novembro de 2016\\
+Local: Observat\'orio Nacional, Rio de Janeiro, RJ.
+\end{itemize}
+
+\subsection{Exame de qualifica\c{c}\~ao}
+
+O processo de qualifica\c{c}\~ao come\c{c}ou o d\'ia 09 deste m\^es (mar\c{c}o) e t\^em a previs\~ao de conclus\~ao o dia 23 de maio (data da defesa).
+
+\subsection{Exame de profici\^encia em L\'ingua Inglesa}
+
+Aprovado no mestrado (realizado em abril de 2014).
+
+
+
+\section{Situa\c{c}\~ao do projeto de pesquisa}
+
+Em Fevereiro do ano 2016 o \textit{DES} completou 3 anos de observa\c{c}\~oes, fechando completamente o ``tanque de guerra'' desenhado por sua \'area coberta no c\'eu (ver Fig. \ref{fig:cobertura}).
+
+
+\begin{comment}
+A etapa inicial do doutorado foi para fazer a an\'alise astrom\'etrica das imagens onde se tem observa\c{c}\~oes de TNOs que foram obtidas no mestrado. A figura \ref{fig:DECam} mostra a configura\c{c}\~ao do mosaico de CCDs e al\'em da redu\c{c}\~ao astrométrica feita com o PRAIA pretendemos tamb\'em levar em conta as deforma\c{c}\~oes de campo do mosaico.  
+
+\begin{figure}[H]
+\centering \includegraphics[width=10cm]{DECamOrientation.pdf}
+\caption{Orienta\c{c}\~ao no c\'eu do mosaico de CCDs da DECam composto por 62 CCDs (laranja, rosa, azul, amarelo) e 12 para o controle de guiagem (verde) e foco (magenta), mostrando a correspond\^encia entre o n\'umero de CCD (\textsc{ccdnum}) e a posi\c{c}\~ao do detector (\textsc{detpos}), definindo a configura\c{c}\~ao do mosaico.} \label{fig:DECam}
+\end{figure}
+
+
+Calculamos as coordenadas $(\xi,\eta)$ a partir da parte linear da solu\c{c}\~ao armazenada no header da imagem \textsc{.fits}.
+\begin{equation}\label{eq:correction}
+\left(\begin{array}{l}
+\xi \\
+\eta 
+\end{array}\right) = \left(\begin{array}{ll}
+CD_{11} & CD_{12} \\
+CD_{21} & CD_{22}
+\end{array}\right)\left(\begin{array}{l}
+x-CRPIX_1 \\
+y-CRPIX_2
+\end{array}\right)
+\end{equation}
+onde 
+
+$CD_{ij}$ representam os elementos da matriz de transforma\c{c}\~ao lineal de pixel para coordenadas celestes.
+
+$CRPIX_i$ \'e a localiza\c{c}\~ao do ponto de refer\^encia ao longo do eixo $i$, em unidades de pixels.
+
+$(x, y)$ s\~ao as coordenadas em unidades de pixels, representa a localiza\c{c}\~ao nos eixos $x$ e $y$ do CCD.
+
+As fun\c{c}\~oes de distor\c{c}\~ao s\~ao definidos como se segue:
+\begin{equation}\label{eq:correction1}
+f_\xi(\xi, \eta) = PV_{1,0} + PV_{1,1} \xi + PV_{1,2}\eta + PV_{1,4}\xi^2 + PV_{1,5}\xi\eta + PV_{1,6} \eta^2 + PV_{1,7} \xi^3 + PV_{1,8} \xi^2 \eta + PV_{1,9} \xi \eta^2 + PV_{1, 10}\eta^3
+\end{equation}
+\begin{equation}\label{eq:correction2}
+f_\eta(\xi, \eta) = PV_{2,0} + PV_{2,1} \eta + PV_{2,2} \xi + PV_{2,4}\eta^2 + PV_{2,5} \eta \xi + PV_{2,6} \xi^2 + PV_{2,7} \eta^3 + PV_{2,8} \eta^2 \xi + PV_{2,9} \eta \xi^2 + PV_{2,10}\xi^3
+\end{equation}
+onde
+
+$PV_{im}$ Coeficiente de distor\c{c}\~ao da imagem para o eixo $i$.
+
+$\xi, \eta, f_\xi, f_\eta$ est\~ao em graus. 
+
+Para fazer este processo automaticamente foram desenvolvidos algoritmos para extrair os par\^ametros armazenados no header da imagem para fornecer \`a equa\c{c}\~oes \ref{eq:correction}, \ref{eq:correction1} e \ref{eq:correction2} e depois fazer a transforma\c{c}\~ao para coordenadas esf\'ericas e poder fazer as corre\c{c}\~oes das deforma\c{c}\~oes de grande campo no n\'ivel de mosaico, e tamb\'em fazer as corre\c{c}\~oes das deforma\c{c}\~oes locais no n\'ivel de CCD usando o pacote PRAIA.
+
+Atualmente estamos fazendo um censo dos objetos conhecidos do Sistema Solar que se encontram nas observações do DES, usando para isso o servi\c{c}o SkyBoT para analisar todos os apontamentos.
+
+O tempo previsto para o SkyBoT terminar de fazer a an\'alise \'e de aproximadamente 3 dias. Ap\'os disso temos que verificar se o objeto foi efetivamente detectado pela DECam.
+
+\subsection{Resultados Parciais j\'a obtidos}
+
+Usando as imagens obtidas no mestrado para melhorar a astrometria usando s\'o o pacote PRAIA e o modelo de corre\c{c}\~ao de grande campo descrito acima para refinar os resultados obtidos pelo PRAIA (PRAIA + DES), n\'os temos resultados parciais mostrados na seguinte tabela:
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{ccccccccc}
+\toprule \multirow{2}{*}{\textbf{TNO}} & \multirow{2}{*}{\textbf{Mag.}} & \textbf{d} & \multirow{2}{*}{\textbf{Astrometria}} & $\boldsymbol{\Delta\alpha\cos\delta}$ & $\boldsymbol{\Delta\delta}$ & $\boldsymbol{\sigma_{\Delta\alpha\cos\delta}}$& $\boldsymbol{\sigma_{\Delta\delta}}$& \multirow{2}{*}{\textbf{Cat\'alogo}} \\ \cline{5-8}
+ & & (UA) & &\multicolumn{4}{c}{$\boldsymbol{arcsec}$} &\\ \midrule
+\multirow{2}{*}{2005 RN$_{43}$}   &\multirow{2}{*}{20.1}& \multirow{2}{*}{40.65}&PRAIA       &  0.063 & -0.060 & 0.034 & 0.024 & \multirow{2}{*}{WFI}\\
+                                  &&& PRAIA + DES &  0.060 & -0.055 & 0.031 & 0.025 &\\ \hline
+\multirow{2}{*}{2005 TB$_{190}$}  &\multirow{2}{*}{21.3}& \multirow{2}{*}{46.24}&PRAIA       & -0.048 &  0.004 & 0.026 & 0.086 &\multirow{2}{*}{UCAC4}\\
+                                  &&& PRAIA + DES & -0.026 & -0.053 & 0.065 & 0.113 &\\ \hline
+\multirow{2}{*}{2012 PD$_{26}$}   &\multirow{2}{*}{21.7}&\multirow{2}{*}{11.64}& PRAIA       & -0.336 & -0.123 & 0.154 & 0.137 &\multirow{2}{*}{UCAC4}\\
+                                  &&& PRAIA + DES & -0.336 & -0.087 & 0.124 & 0.103 &\\ \bottomrule
+\end{tabular}
+\end{center}
+\caption{Offsets das posi\c{c}\~oes dos TNOs obtidas usando a redu\c{c}\~ao astrom\'etrica com o PRAIA e o modelo de corre\c{c}\~ao do DES com rela\c{c}\~ao \`as posi\c{c}\~oes calculado pelas efem\'erides. Onde Mag. \'e a magnitude visual, $d$ \'e a dist\^ancia helioc\^entrica no instante da observa\c{c}\~ao.} \label{tab:resultados} 
+\end{table}
+
+Os desvios padrões $\sigma$ obtidos no caso do TNO 2005 RN$_{43}$ com o cat\'alogo de usu\'ario (WFI\footnote{O telescópio ESO/MPG de 2.2 m est\'a equipado com o Wide Field Imager (WFI). Isso foi usado para fazer cat\'alogos que servem como referência astrométrica para a determinação da posição de alguns TNOs selecionados.}) foram bem melhores que aqueles obtidos com o UCAC4 por conta de serem mais densos e possuírem melhor coerência interna. Isto será ainda melhor com o GAIA nas mãos. Ainda precisamos fazer mais testes para poder ter uma melhor vis\~ao dos resultados.
+
+\subsection{Dificultades encontradas}
+
+\begin{itemize}
+\item Uma das dificultades encontradas foi que o servi\c{c}o SkyBoT teve algumas atualiza\c{c}\~oes recentes, e o Astropy teve alguns problemas para ler os arquivos de saida gerados pelo SkyBoT. O problema estava na defini\c{c}\~ao de um dos par\^ametros adicionados e ent\~ao foi reportado para o respons\'avel, o Dr. Jerome Berthier, e ele prontamente consertou o problema.
+\item Considerando que o SkyBoT \'e um servi\c{c}o online, toma um certo tempo acessar ao servi\c{c}o e esse tempo \'e consider\'avel levando em conta a quantidade de dados. Para resolver esta dificuldade está sendo instalado o SkyBoT nas instala\c{c}\~oes do LIneA e assim poder usar o servi\c{c}o de forma local e reduzir o tempo de busca.
+\item As imagens do levantamento DES s\'o s\~ao disponibilizados um ano depois da data da observa\c{c}\~ao, o que significaria que n\~ao poderiamos ter acesso \`as imagens mais recentes. O trabalho do meu mestrado ajudou ao projeto ``\textit{Identifying known Solar System objects in DES images and predicting stellar occultations by them}'', liderado pelo Dr. Julio camargo e eu tamb\'em sou membro oficial, que foi aprovado recentemente pelo comit\^e de gerenciamento do DES para explorar seus dados observacionais com um fim espec\'ifico: localizar TNOs conhecidos nas imagens oriundas de seu levantamento, determinar posi\c{c}\~oes precisas desses objetos, refinar suas \'orbitas com aux\'ilio dessas posi\c{c}\~oes, e determinar os respectivos mapas de oculta\c{c}\~ao (figuras indicando quando e onde, sobre a Terra, tais eventos poderão ser observados). Ent\~ao como membro desta colabora\c{c}\~ao externa do DES ser\'a poss\'ivel ter acesso \`as imagens recentes.
+\end{itemize}
+
+\end{comment}
+\section{Pr\'oximas etapas}
+
+As atividades acad\^emicas ser\~ao conclu\'idas no seguinte semestre.
+
+\noindent As atividades de pesquisa previstas para o pr\'oximo per\'iodo ser\~ao:
+
+\begin{enumerate}
+\item Processo de qualifica\c{c}\~ao.
+\item Continuar com a instala\c{c}\~ao e testar os c\'odigos \textit{PRAIA} e \textit{NIMA} no portal desenvolvido pelo \textit{LIneA} assim como os scripts necess\'arios que ser\~ao a base para a cria\c{c}\~ao do pipeline de previs\~ao de oculta\c{c}\~oes.
+\item Aplicar SkyBoT \`as novas imagens geradas no quarto ano de funcionamento do DES (setembro de 2016 a fevereiro de 2017).
+\item Fazer um censo dos corpos do Sistema Solar e identificar TNOs/Centauros na \'area coberta pelo levantamento DES no quarto ano.
+\item Recuperar as novas imagens com observa\c{c}\~oes de TNOs e fazer a an\'alise astrom\'etrica.
+\item Refinar as \'orbitas dos TNOs e Centauros.
+\end{enumerate}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{cccccccccccc}
+\toprule \multirow{2}{*}{\textbf{Atividade}}& \multicolumn{8}{c}{\textbf{2016}} & \multicolumn{3}{c}{\textbf{2017}} \\ \cline{2-12}
+  & \textbf{Abr} & \textbf{Mai} & \textbf{Jun} & \textbf{Jul} & \textbf{Ago} & \textbf{Out} & \textbf{Nov} & \textbf{Dez} & \textbf{Jan} & \textbf{Fev} & \textbf{Mar}\\ \midrule 
+1 & X & X &   &   &   &   &   &   &   &   &   \\ 
+2 &   &   & X &   &   &   &   &   &   &   &   \\
+3 &   &   & X & X &   &   &   &   &   &   &   \\ 
+4 &   &   &   &   & X & X &   &   &   &   &   \\
+5 &   &   &   &   &   &   & X & X & X & X &   \\
+6 &   &   &   &   &   &   &   &   & X & X & X \\ \bottomrule
+\end{tabular}
+\caption{Cronograma das pr\'oximas etapas.}
+\label{tab:cronograma}
+\end{table}
+ 
+ \newpage
+%\bibliographystyle{plain}
+\bibliographystyle{plainnat}
+%\bibliographystyle{unsrtnat}
+%\bibliographystyle{abbrvnat}
+%\bibliographystyle{ksfh_nat}
+\bibliography{bibliografia} 
+
+\vfill \hfill
+\begin{tabular}{c}
+\includegraphics{firma1Negro.png}
+\\ \hline
+\textsc{Martin Banda Huarca}
+\end{tabular}
+
+\end{document}
