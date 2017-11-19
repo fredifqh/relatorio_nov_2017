@@ -36,9 +36,9 @@
 %La técnica de ocultación estelar además de permitir obtener el diametro 
 %En los últimos años la técnica de ocultación estelar ha permitido revelar 
 
-A astrometria de objetos transnetunianos (TNOs) e Centauros pode ser determinada de duas formas (1) tomando imagens diretas do corpo contendo estrelas em torno de eles (estrelas de referencia) e (2) atraves de ocultações estelares. Em qualquer dos casos a astrometria depende da qualidade das imagens obtidas a partir do solo ou telescópios espaciais e da precisão astrométrica das estrelas de referencia. Neste sentido, os dados obtidos pela missão astrométrica GAIA, a qual fornecera a astrometria para aproximadamente um bilhão de estrelas com magnitudes até 20 com uma precisão da ordem dos micro segundos ($\mu$as), permitira melhorar significativamente a precisão astrométrica dos TNOs e Centauros.
+A astrometria de objetos transnetunianos (TNOs) e Centauros pode ser determinada de duas formas (1) tomando imagens diretas do corpo contendo estrelas em torno de eles (estrelas de referencia) e (2) atraves de ocultações estelares. Em qualquer dos casos a astrometria depende da precisão astrométrica das estrelas de referencia. Neste sentido, os dados obtidos pela missão astrométrica GAIA, a qual fornecera a astrometria para aproximadamente um bilhão de estrelas com magnitudes até 20 com uma precisão da ordem dos micro segundos ($\mu$as), permitira melhorar significativamente a precisão astrométrica dos TNOs e Centauros.
 
-Conforme mencionado anteriormente, o objetivo cientifico do projeto de mestrado é, \textbf{determinar a astrometria de TNOs e Centauros usando imagens recentes e de época antiga e a solução astrométrica GAIA com estrelas contemplando os 5 parâmetros - posições, paralaxes, e movimentos próprios - a qual será liberada em Junho de 2017}.
+Conforme mencionado anteriormente, o objetivo cientifico do projeto de mestrado é, \textbf{determinar a astrometria de TNOs e Centauros usando imagens recentes e de época antiga, e a solução astrométrica GAIA com estrelas contemplando os 5 parâmetros - posições, paralaxes, e movimentos próprios - a qual será liberada em Junho de 2017}.
 
 \begin{comment}
  permitira mejorar significativamente la precisión astrométrica de estos de los TNOs y Centauros.    ... Estos resultados mejorarán considerablemente con los datos que esta obteniendo la misión astrométrica GAIA e que a segunda liberação de dados sera Junio do 2017, la cual proveera la astrometria para aproxidamente 1 000 millones de estrelas con magnitudes menor que 20 (G $<$ 20) en el orden de microsegundos ($\mu$as), y esto permitirá obtener la astrometria de estos objetos en el orden de ().
@@ -60,52 +60,17 @@ Por lo mencionado, el objetivo cientifico del presente trabajo es, \textbf{obter
 
 A técnica de ocultação estelar por TNOs e Centauros, complementada por outras técnicas, permite obter o tamanho de esses corpos na ordem do quilômetro, caracterizar sua forma, e revelar propiedades muito interessantes como anéis \citep{2017Natur.550..219O, 2014AGUFM.P43F..01B} e atmosferas em torno de eles \citep{1538-3881-136-5-1757, 2006Natur.439...52S}. No entanto, devido a que os TNOs e Centauros são pequenos (menores que 2400 km) e dada suas distancias a partir do Sol (entre  5 - 30 ua para os centauros, e maior que 30 ua para os TNOs) possuem baixo brilho (magnitudes maiores que 20), a previsão de ocultações por esses objetos não é uma tarefa simples. 
 
-La predicción de ocultaciones depende de la precisión astrométrica del cuerpo y de precisión astrométrica del
-A determinação da astrometria de TNOs e Centauros para a predição de ocultações  
-A predição de ocultações estelares depende da astrometria do corpo e da estrela que sera ocultada. Para esse proposito foram levado a cabo programas de observação usando telescópio de grande porte 
+Para preveer ocultações estelares é necessário conhecer a astrometría do corpo e da estrela que será ocultada. A astrometria do corpo é determinada a partir de imagens usando estrelas de referencia. A astrometria da estrela ocultada e das estrelas de referencia são tiradas de catalogos estelares. Quanto maior é a precisão da estrela maior é a solução astrometrica do corpo.   
 
-Para preveer ocultãções estelares é necessário conhecer a astrometría do corpo y da estrela que será ocultada. A astrometria do corpo é determinada a partir de imagens usando estrelas de referencia, e a astrometria da estrela ocultada e das estrelas de referencia são tiradas de catalogos estelares. A precisão depende direitamente da precisão astrométrica das estrelas de campo.
-
-
-
-
-
-Para contornar esse problema foi levado a cabo
-
-
-  da astrometria de esses corpos para a previsão de ocultações seja complicada s características hacen que estos cuerpos hayan sido poco estudiados y la determinación de su astrometria no sea una tarea sencilla. 
 
 \subsection{Metodologia}
 
-Utilizando as observa\c{c}\~oes feitas pelo projeto \textit{DES} e a experi\^encia do \textit{LIneA}\footnote{Laborat\'orio Interinstitucional de e-Astronomia} no trabalho com grandes massas de dados, nos serviremos de um conjunto de pouco mais de 66 mil imagens (uma imagem \'e dada por um mosaico com 62 CCDs) do c\'eu do hemisf\'erio sul celeste desde setembro de 2013 at\'e fevereiro de 2016, usando a c\^amera DECam instalada no telescópio Blanco no CTIO, para desenvolvermos nosso trabalho. Estima-se que algumas centenas de TNOs e Centauros com V<23 estejam contidos nessas imagens.
-
-\begin{figure}[H]
-\centering \includegraphics[width = 0.7\textwidth, viewport=0 70 500 340, clip]{pointings.pdf}
-\caption{Proje\c{c}\~ao Hammer-Aitoff da \'area coberta pelo DES (Setembro de 2013 at\'e Fevereiro de 2016), com uma densidade de apontamentos crescendo do
-vermelho at\'e o azul.}
-\label{fig:cobertura}
-\end{figure}
-
-
-Para cumprir nossos objetivos n\'os temos uma serie de ferramentas e servi\c{c}os. Elas s\~ao:
-
-\begin{description}
-\item[easyaccess:] Int\'erprete de linha de comando \textit{SQL} desenvolvida pelo DES para pesquisas astron\^omicas na base de dados do DES. Mais informa\c{c}\~ao no site \url{https://github.com/mgckind/easyaccess}
-\item[SkyBoT:] Sky Body Tracker \citep{2006ASPC..351..367B} \'e um servi\c{c}o fornecido pelo observat\'orio de Paris para identificar os objetos conhecidos do Sistema Solar numa certa regi\~ao do C\'eu, numa espec\'ifica data.
-\item[PRAIA:] Plataforma para Redu\c{c}\~ao Autom\'atica de Imagens Astron\^omicas \citep{2011gfun.conf...85A}, desenvolvido pelo Dr. Marcelo Assafin (OV/UFRJ). Ele faz a redu\c{c}\~ao astrométrica usando as posi\c{c}\~oes das estrelas como refer\^encia os quais s\~ao obtidas de cat\'alogos estelares.
-\item[NIMA:] Numerical Integration of the Motion of an Asteroid \citep{2015A&A...584A..96D}, desenvolvido pelo Dr. Josselin Desmars, refina a \'orbita j\'a existente de objetos do Sistema Solar a partir de novas posi\c{c}\~oes astrom\'etricas. Para isso usa o integrador num\'erico de Gauss-Radau de ordem 15.
-\item[Python:] Linguagem de programa\c{c}\~ao \'util para gerenciar os programas acima mencionados automatizando os procedimentos. 
-\end{description}
-
-A metodologia consiste basicamente em:
+A metodoloǵía para conseguir nosso objetivo é:
 
 \begin{enumerate}
-\item Usar a ferramenta \textit{easyaccess} para baixar a informa\c{c}\~ao necess\'aria (posi\c{c}\~ao, tamanho do campo, datas, etc.) de todos os CCDs armazenados na base de dados do \textit{DES}.
-\item Usar o servi\c{c}o SkyBoT para identificar os objetos conhecidos do Sistema Solar na regi\~ao de cobertura do \textit{DES} (informa\c{c}\~ao obtida no item anterior).
-\item Recuperar imagens que contem observa\c{c}\~oes de TNOs e obter delas os par\^ametros de calibra\c{c}\~ao fotom\'etrica e astrom\'etrica.
-\item Fazer a astrometria desde objeto levando em conta as deforma\c{c}\~oes locais do CCD onde se encontra a imagem para isso vamos usar o pacote PRAIA.
-\item Refinar as \'orbitas dos TNOs usando o pacote NIMA.
-\item Desenvolver procedimentos para avaliar a qualidade dos resultados obtidos.
+  \item Revisitar a base de imagens de TNOs e Centauros que foram tomadas com o WFI do telescopio nos anos 2012, 2016.
+  \item Procesar as imagens utilizando IRAF no caso elas ainda não foran procesadas.
+  \item Determinar a astrometría dos corpos utilizando o PRAIA astrometry usando dados do catalogo GAIA.
 \end{enumerate}
 
 \subsection{Resultados esperados}
@@ -178,7 +143,7 @@ Este é o meu primeiro relatório como aluno do DPPG.
 
 \section{Situa\c{c}\~ao do projeto de pesquisa}
 
-Em Fevereiro do ano 2016 o \textit{DES} completou 3 anos de observa\c{c}\~oes, fechando completamente o ``tanque de guerra'' desenhado por sua \'area coberta no c\'eu (ver Fig. \ref{fig:cobertura}).
+
 
 
 \begin{comment}
