@@ -36,9 +36,9 @@
 %La técnica de ocultación estelar además de permitir obtener el diametro 
 %En los últimos años la técnica de ocultación estelar ha permitido revelar 
 
-A astrometria de objetos transnetunianos (TNOs) e Centauros pode ser determinada de duas formas (1) tomando imagens diretas do corpo contendo estrelas em torno de eles (estrelas de referencia) e (2) atraves de ocultações estelares. Em qualquer dos casos a astrometria depende da precisão astrométrica das estrelas de referencia. Neste sentido, os dados obtidos pela missão astrométrica GAIA, a qual fornecera a astrometria para aproximadamente um bilhão de estrelas com magnitudes até 20 com uma precisão da ordem dos micro segundos ($\mu$as), permitira melhorar significativamente a precisão astrométrica dos TNOs e Centauros.
+A astrometria de objetos transnetunianos (TNOs) e Centauros pode ser determinada de duas formas: 1) tomando imagens diretas do corpo contendo estrelas em torno de eles (estrelas de referencia) e 2) atraves de ocultações estelares. Em qualquer dos casos, a astrometria depende da precisão astrométrica das estrelas de referencia. Neste sentido, os dados obtidos pela missão astrométrica GAIA (Global Astrometric Instrument for Astrophysics), a qual fornecera a astrometria para aproximadamente um bilhão de estrelas com magnitudes até 20 com uma precisão da ordem dos micro segundos ($\mu$as), permitira melhorar significativamente a precisão astrométrica dos TNOs e Centauros.
 
-Conforme mencionado anteriormente, o objetivo cientifico do projeto de mestrado é, \textbf{determinar a astrometria de TNOs e Centauros usando imagens recentes e de época antiga, e a solução astrométrica GAIA com estrelas contemplando os 5 parâmetros - posições, paralaxes, e movimentos próprios - a qual será liberada em Junho de 2017}.
+Conforme mencionado anteriormente, o objetivo cientifico do projeto de mestrado é, \textbf{obter a astrometria de TNOs e Centauros usando imagens recentes e de época antiga, e a solução astrométrica GAIA com estrelas contemplando os 5 parâmetros - posições, paralaxes, e movimentos próprios - a qual será liberada em Junho de 2017 }.
 
 \begin{comment}
  permitira mejorar significativamente la precisión astrométrica de estos de los TNOs y Centauros.    ... Estos resultados mejorarán considerablemente con los datos que esta obteniendo la misión astrométrica GAIA e que a segunda liberação de dados sera Junio do 2017, la cual proveera la astrometria para aproxidamente 1 000 millones de estrelas con magnitudes menor que 20 (G $<$ 20) en el orden de microsegundos ($\mu$as), y esto permitirá obtener la astrometria de estos objetos en el orden de ().
@@ -60,32 +60,22 @@ Por lo mencionado, el objetivo cientifico del presente trabajo es, \textbf{obter
 
 A técnica de ocultação estelar por TNOs e Centauros, complementada por outras técnicas, permite obter o tamanho de esses corpos na ordem do quilômetro, caracterizar sua forma, e revelar propiedades muito interessantes como anéis \citep{2017Natur.550..219O, 2014AGUFM.P43F..01B} e atmosferas em torno de eles \citep{1538-3881-136-5-1757, 2006Natur.439...52S}. No entanto, devido a que os TNOs e Centauros são pequenos (menores que 2400 km) e dada suas distancias a partir do Sol (entre  5 - 30 ua para os centauros, e maior que 30 ua para os TNOs) possuem baixo brilho (magnitudes maiores que 20), a previsão de ocultações por esses objetos não é uma tarefa simples. 
 
-Para preveer ocultações estelares é necessário conhecer a astrometría do corpo e da estrela que será ocultada. A astrometria do corpo é determinada a partir de imagens usando estrelas de referencia. A astrometria da estrela ocultada e das estrelas de referencia são tiradas de catalogos estelares. Quanto maior é a precisão da estrela maior será a solução astrometrica do corpo. No pasar do tempo, a precição dos catalogos foi acrescentando com o uso de telescopios de grande porte (ref), não obstante, a precisão aumento considerablente com o uso de telescopios espaciais (ref). Devido ao exito do da missão hyparcos e utilizando a mesma tecnologia foi lançada a missão GAIA que permitira superar a precisão       
+Para a predição de ocultações estelares é necessário conhecer a astrometria do corpo e da estrela que será ocultada. A astrometria do corpo é determinada a partir de imagens usando estrelas de referencia e a astrometria da estrela ocultada e das estrelas de referencia são tiradas de catálogos estelares. No passar do tempo, a precisão na posição das estrelas dos catálogos foi acrescentando com o uso de telescópios de grande porte. Não obstante, a precisão aumento consideravelmente com a missão espacial astrométrica Hipparcos produzindo um mapeamento de 120 000 estrelas no ordem de milissegundos. Devido ao exito da missão Hipparcos, foi lançada a missão GAIA, a qual permitira medir a posição das estrelas no ordem de microssegundos.
 
-
+Esses resultados permitiram ter uma precisão maior na solução astrométrica dos TNOs e Centauros, e por conseguinte, melhorar significativamente a predição de ocultações.     
 \subsection{Metodologia}
 
-A metodoloǵía para conseguir nosso objetivo é:
+A metodologia para conseguir nosso objetivo é:
 
 \begin{enumerate}
-  \item Revisitar a base de imagens de TNOs e Centauros que foram tomadas com o WFI do telescopio nos anos 2012, 2016.
-  \item Procesar as imagens utilizando IRAF no caso elas ainda não foran procesadas.
-  \item Determinar a astrometría dos corpos utilizando o PRAIA astrometry usando dados do catalogo GAIA.
+  \item Revisitar a base de imagens recentes e época antiga dos TNOs e Centauros que foram obtidas com a câmera WFI (Wide Field Manager) instalada no telescópio de 2,2m do ESO.
+  \item Processamento das imagens utilizando o pacote esowfi no IRAF (Image Reduction And Analysis Facility) no caso elas ainda não foram processadas.
+  \item Determinar a astrometria dos corpos utilizando o pacote PRAIA (Platform for Reduction of Astronomical Images Automatically) usando os dados do catalogo GAIA.
 \end{enumerate}
 
 \subsection{Resultados esperados}
 
-Depois de aplicar a metodologia descrita acima n\'os esperamos ter os seguintes resultados:
-\begin{itemize}
-\item Um censo e estudo dos asteroides detectados nas imagens do \textit{DES}.
-\item Astrometria, fotometria e refinamento de \'orbitas dos TNOs e Centauros detectados.
-\item Mapas de previs\~oes de oculta\c{c}\~oes estelares pelos TNOs e Centauros.
-\item Processos automatizados para analisar grandes quantidades de massas de dados que fa\c{c}am os item anteriores,
-\end{itemize}
-
-Tendo as ferramentas desenvolvidas poder\~ao ser analisadas grandes quantidades de massas de dados, o que significa que vamos ter algumas centenas de observa\c{c}\~oes de TNOs e fazendo a astrometria ser\'a poss\'ivel obter posi\c{c}\~oes precisas que v\~ao a melhorar as \'orbitas e assim poder ter boas previs\~oes de oculta\c{c}\~oes estelares. 
-
-\newpage
+Depois de aplicar a metodologia descrita acima nós esperamos ter a astrometria de TNOs e Centauros usando a informação mais precisa das estrelas do catalogo que será fornecido pelo satélite GAIA:
 
 \section{Informa\c{c}\~oes curriculares}
 
@@ -136,6 +126,18 @@ Tendo as ferramentas desenvolvidas poder\~ao ser analisadas grandes quantidades 
 
 O exame de proficiência será feita no dia 5 de Abril de 2018.
 
+\subsection{Outras atividades}
+
+Alem das atividades para cumprir com o objetivo cientifico, participe das seguintes atividades:
+
+\begin{enumerate}
+  \item Participação na construção da pagina de TNOs 
+  \item Participação em campanhas de observação 
+  \begin{itemize}
+    \item 
+    \item
+  \end{itemize}
+\end{enumerate}
 %==============================================================
 \section{Situação do projeto de pesquisa à época do último relatório}
 %==============================================================
