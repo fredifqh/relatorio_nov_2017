@@ -33,28 +33,10 @@
 \section{Projeto}
 
 \subsection{Objetivo científico}
-%La técnica de ocultación estelar además de permitir obtener el diametro 
-%En los últimos años la técnica de ocultación estelar ha permitido revelar 
 
 A astrometria de objetos transnetunianos (TNOs) e Centauros pode ser determinada de duas formas: 1) tomando imagens diretas do corpo contendo estrelas em torno de eles (estrelas de referencia) e 2) atraves de ocultações estelares. Em qualquer dos casos, a astrometria depende da precisão astrométrica das estrelas de referencia. Neste sentido, os dados obtidos pela missão astrométrica GAIA (Global Astrometric Instrument for Astrophysics), a qual fornecera a astrometria para aproximadamente um bilhão de estrelas com magnitudes até 20 com uma precisão da ordem dos micro segundos ($\mu$as), permitira melhorar significativamente a precisão astrométrica dos TNOs e Centauros.
 
 Conforme mencionado anteriormente, o objetivo cientifico do projeto de mestrado é, \textbf{usando a solução astrométrica GAIA contemplando os 5 parâmetros - posições, paralaxes, e movimentos próprios - a qual será liberada em Junho de 2017, determinar a astrometría de TNOs e Centauros usando imagens recentes e de época antiga, e atraves de ocultações estelares}.
-
-\begin{comment}
- permitira mejorar significativamente la precisión astrométrica de estos de los TNOs y Centauros.    ... Estos resultados mejorarán considerablemente con los datos que esta obteniendo la misión astrométrica GAIA e que a segunda liberação de dados sera Junio do 2017, la cual proveera la astrometria para aproxidamente 1 000 millones de estrelas con magnitudes menor que 20 (G $<$ 20) en el orden de microsegundos ($\mu$as), y esto permitirá obtener la astrometria de estos objetos en el orden de ().
-
-
-La astrometria de TNOs y Centauros no es una tarea sencilla puesto que estos son objetos pequeños ()
-En la actualidad existe una gran expectativa por los datos que estan siendo obtenidos por la misión astrométrica GAIA, la cual proveera la astrometria en el orden de microsegundos ($\mu$as) para aproxidamente 1 000 millones de estrelas con magnitudes menor que 20 (G < 20).   
-En los últimos años, resultados importantes sobre TNOs e Centauros han sido obtenidos a través de la técnica de ocultación estelar y técnicas complementarias. Estas técnicas han permitido caracterizar estos objetos y descubrir características muy particulares, como la presencia de atmosfera y anillos en torno de algunos de estos objetos. No obstante, la predicción de ocultações no es una tarea facil ya que esta depende de la precisión astrometríca de la estrella, la cual es suministrada por catalogos estelares, y del objeto ocultador, que por ser muy pequeños (< 2400 km), distantes del Sol (15 - 45 UA) y con bajo brillo (magnitudes 18 - 23) no son bien determinados. Para determinar la astrometria de TNOs se realizan programas de observación con telescopios en tierra y se utilizan estrellas de referencia de catalogos estelares. Puesto que la astrometria de estos objetos depende de la precisión astrométrica de la estrellas de referencia, esta mejorará considerablemente con los datos que viene obteniendo el satelite GAIA. 
-
-Por lo mencionado, el objetivo cientifico del presente trabajo es, \textbf{obter a major precisão astrométrica de TNOs e Centauros utilizando datos de observación terrestre tomados en programas anteriores y datos del satelite GAIA}, os quais serán liberados en Junio del 2017.
-
-
-%con el  Por lo tanto, cuanto mayor sea la precisión astrometrica de las estrellas mayor será la precisión astrométrica del objeto y 
-
-%La precisión astrométrica de las estrellas aumentará considerablemente con los dados que seran suministrados por el satelite GAIA 
-\end{comment}
 
 \subsection{Estado da arte}
 
@@ -62,20 +44,28 @@ A técnica de ocultação estelar por TNOs e Centauros, complementada por outras
 
 Para a predição de ocultações estelares é necessário conhecer a astrometria do corpo e da estrela que será ocultada. A astrometria do corpo é determinada a partir de imagens usando estrelas de referencia e a astrometria da estrela ocultada e das estrelas de referencia são tiradas de catálogos estelares. No passar do tempo, a precisão na posição das estrelas dos catálogos foi acrescentando com o uso de telescópios de grande porte. Não obstante, a precisão aumento consideravelmente com a missão espacial astrométrica Hipparcos produzindo um mapeamento de 120 000 estrelas no ordem de milissegundos. Devido ao exito da missão Hipparcos, foi lançada a missão GAIA, a qual permitira medir a posição das estrelas no ordem de microssegundos.
 
-Esses resultados permitiram ter uma precisão maior na solução astrométrica dos TNOs e Centauros, e por conseguinte, melhorar significativamente a predição de ocultações.     
+Esses resultados permitiram ter uma precisão maior na solução astrométrica dos TNOs e Centauros, e por conseguinte, melhorar significativamente a predição de ocultações.
+\newpage     
 \subsection{Metodologia}
 
-A metodologia para conseguir nosso objetivo é:
+A metodologia para conseguir nosso objetivo será dividida em duas partes:
 
+\subsubsection{Metodologia para obter a astrometria usando imagens}
 \begin{enumerate}
   \item Revisitar a base de imagens recentes e época antiga dos TNOs e Centauros que foram obtidas com a câmera WFI (Wide Field Manager) instalada no telescópio de 2,2m do ESO.
   \item Processar imagens utilizando o pacote esowfi no IRAF (Image Reduction And Analysis Facility) para aquelas que ainda não foram processadas.
   \item Determinar a astrometria dos corpos utilizando o pacote PRAIA (Platform for Reduction of Astronomical Images Automatically) usando os dados do catalogo GAIA.
 \end{enumerate}
-
+\subsubsection{Metodologia para obter a astrometria atraves de ocultações estelares}
+\begin{enumerate}
+  \item Analisar as curvas de luz de ocultações estelares observadas.
+  \item Ajustar a forma do corpo às curvas de luz.
+  \item Determinar a posição do centro do objeto.
+  \item Obter a astrometria do corpo usando a posição da estrela ocultada.
+\end{enumerate}
 \subsection{Resultados esperados}
 
-Depois de aplicar a metodologia descrita acima nós esperamos ter a astrometria de TNOs e Centauros usando a informação mais precisa das estrelas do catalogo que será fornecido pelo satélite GAIA:
+Depois de aplicar as metodologias descritas acima nós esperamos ter a astrometria de TNOs e Centauros usando a informação mais precisa das estrelas do catalogo que será fornecido pelo satélite GAIA:
 
 \section{Informa\c{c}\~oes curriculares}
 
@@ -131,116 +121,51 @@ O exame de proficiência será feita no dia 5 de Abril de 2018.
 Alem das atividades para cumprir com o objetivo cientifico, participe das seguintes atividades:
 
 \begin{enumerate}
-  \item Participação na construção da pagina de TNOs 
+  \item Participação na construção do site \url{http://www.linea.gov.br/020-data-center/acesso-a-dados-3/tno-dados/}, a qual fornece predição de ocultações para TNOs e Centauros. 
   \item Participação em campanhas de observação 
   \begin{itemize}
-    \item 
-    \item
+    \item Julho (noite 27 e 28)
+    \item Setembro (noites 19 e 20)
+    \item Outubro (noites 21 e 22)
   \end{itemize}
 \end{enumerate}
 %==============================================================
 \section{Situação do projeto de pesquisa à época do último relatório}
 %==============================================================
 Este é o meu primeiro relatório como aluno do DPPG.
+%============================================================================
+\section{Descrição detalhada do trabalho de pesquisa desenvolvido no período}
+%============================================================================
 
-\section{Situa\c{c}\~ao do projeto de pesquisa}
+%===================================================================
+\subsection{Metodologia aplicada}
+%===================================================================
 
+%===================================================================
+\subsection{Resultados parciais já obtidos}
+%===================================================================
+Foram determinadas a astrometria de 43 TNOs usando as imagens obtidas durante o ano 2013 pelo telescópio 2,2 m do ESO, e a primeira liberação de dados (Gaia DR1). A tabela que se segue mostra os resultados já obtidos.  
+%======================================================================
+\subsection{Dificuldades encontradas e como elas estão sendo superadas}
+A principal dificuldade centrou-se na utilização da ferramenta PRAIA, a qual esta sendo superada pela ajuda do manual do pacote, e pela supervisão do orientador.  
+%======================================================================
 
+%======================================================================
+\subsection{Bibliografia utilizada no contexto do trabalho}
+%======================================================================
 
-
-\begin{comment}
-A etapa inicial do doutorado foi para fazer a an\'alise astrom\'etrica das imagens onde se tem observa\c{c}\~oes de TNOs que foram obtidas no mestrado. A figura \ref{fig:DECam} mostra a configura\c{c}\~ao do mosaico de CCDs e al\'em da redu\c{c}\~ao astrométrica feita com o PRAIA pretendemos tamb\'em levar em conta as deforma\c{c}\~oes de campo do mosaico.  
-
-\begin{figure}[H]
-\centering \includegraphics[width=10cm]{DECamOrientation.pdf}
-\caption{Orienta\c{c}\~ao no c\'eu do mosaico de CCDs da DECam composto por 62 CCDs (laranja, rosa, azul, amarelo) e 12 para o controle de guiagem (verde) e foco (magenta), mostrando a correspond\^encia entre o n\'umero de CCD (\textsc{ccdnum}) e a posi\c{c}\~ao do detector (\textsc{detpos}), definindo a configura\c{c}\~ao do mosaico.} \label{fig:DECam}
-\end{figure}
-
-
-Calculamos as coordenadas $(\xi,\eta)$ a partir da parte linear da solu\c{c}\~ao armazenada no header da imagem \textsc{.fits}.
-\begin{equation}\label{eq:correction}
-\left(\begin{array}{l}
-\xi \\
-\eta 
-\end{array}\right) = \left(\begin{array}{ll}
-CD_{11} & CD_{12} \\
-CD_{21} & CD_{22}
-\end{array}\right)\left(\begin{array}{l}
-x-CRPIX_1 \\
-y-CRPIX_2
-\end{array}\right)
-\end{equation}
-onde 
-
-$CD_{ij}$ representam os elementos da matriz de transforma\c{c}\~ao lineal de pixel para coordenadas celestes.
-
-$CRPIX_i$ \'e a localiza\c{c}\~ao do ponto de refer\^encia ao longo do eixo $i$, em unidades de pixels.
-
-$(x, y)$ s\~ao as coordenadas em unidades de pixels, representa a localiza\c{c}\~ao nos eixos $x$ e $y$ do CCD.
-
-As fun\c{c}\~oes de distor\c{c}\~ao s\~ao definidos como se segue:
-\begin{equation}\label{eq:correction1}
-f_\xi(\xi, \eta) = PV_{1,0} + PV_{1,1} \xi + PV_{1,2}\eta + PV_{1,4}\xi^2 + PV_{1,5}\xi\eta + PV_{1,6} \eta^2 + PV_{1,7} \xi^3 + PV_{1,8} \xi^2 \eta + PV_{1,9} \xi \eta^2 + PV_{1, 10}\eta^3
-\end{equation}
-\begin{equation}\label{eq:correction2}
-f_\eta(\xi, \eta) = PV_{2,0} + PV_{2,1} \eta + PV_{2,2} \xi + PV_{2,4}\eta^2 + PV_{2,5} \eta \xi + PV_{2,6} \xi^2 + PV_{2,7} \eta^3 + PV_{2,8} \eta^2 \xi + PV_{2,9} \eta \xi^2 + PV_{2,10}\xi^3
-\end{equation}
-onde
-
-$PV_{im}$ Coeficiente de distor\c{c}\~ao da imagem para o eixo $i$.
-
-$\xi, \eta, f_\xi, f_\eta$ est\~ao em graus. 
-
-Para fazer este processo automaticamente foram desenvolvidos algoritmos para extrair os par\^ametros armazenados no header da imagem para fornecer \`a equa\c{c}\~oes \ref{eq:correction}, \ref{eq:correction1} e \ref{eq:correction2} e depois fazer a transforma\c{c}\~ao para coordenadas esf\'ericas e poder fazer as corre\c{c}\~oes das deforma\c{c}\~oes de grande campo no n\'ivel de mosaico, e tamb\'em fazer as corre\c{c}\~oes das deforma\c{c}\~oes locais no n\'ivel de CCD usando o pacote PRAIA.
-
-Atualmente estamos fazendo um censo dos objetos conhecidos do Sistema Solar que se encontram nas observações do DES, usando para isso o servi\c{c}o SkyBoT para analisar todos os apontamentos.
-
-O tempo previsto para o SkyBoT terminar de fazer a an\'alise \'e de aproximadamente 3 dias. Ap\'os disso temos que verificar se o objeto foi efetivamente detectado pela DECam.
-
-\subsection{Resultados Parciais j\'a obtidos}
-
-Usando as imagens obtidas no mestrado para melhorar a astrometria usando s\'o o pacote PRAIA e o modelo de corre\c{c}\~ao de grande campo descrito acima para refinar os resultados obtidos pelo PRAIA (PRAIA + DES), n\'os temos resultados parciais mostrados na seguinte tabela:
-
-\begin{table}[H]
-\begin{center}
-\begin{tabular}{ccccccccc}
-\toprule \multirow{2}{*}{\textbf{TNO}} & \multirow{2}{*}{\textbf{Mag.}} & \textbf{d} & \multirow{2}{*}{\textbf{Astrometria}} & $\boldsymbol{\Delta\alpha\cos\delta}$ & $\boldsymbol{\Delta\delta}$ & $\boldsymbol{\sigma_{\Delta\alpha\cos\delta}}$& $\boldsymbol{\sigma_{\Delta\delta}}$& \multirow{2}{*}{\textbf{Cat\'alogo}} \\ \cline{5-8}
- & & (UA) & &\multicolumn{4}{c}{$\boldsymbol{arcsec}$} &\\ \midrule
-\multirow{2}{*}{2005 RN$_{43}$}   &\multirow{2}{*}{20.1}& \multirow{2}{*}{40.65}&PRAIA       &  0.063 & -0.060 & 0.034 & 0.024 & \multirow{2}{*}{WFI}\\
-                                  &&& PRAIA + DES &  0.060 & -0.055 & 0.031 & 0.025 &\\ \hline
-\multirow{2}{*}{2005 TB$_{190}$}  &\multirow{2}{*}{21.3}& \multirow{2}{*}{46.24}&PRAIA       & -0.048 &  0.004 & 0.026 & 0.086 &\multirow{2}{*}{UCAC4}\\
-                                  &&& PRAIA + DES & -0.026 & -0.053 & 0.065 & 0.113 &\\ \hline
-\multirow{2}{*}{2012 PD$_{26}$}   &\multirow{2}{*}{21.7}&\multirow{2}{*}{11.64}& PRAIA       & -0.336 & -0.123 & 0.154 & 0.137 &\multirow{2}{*}{UCAC4}\\
-                                  &&& PRAIA + DES & -0.336 & -0.087 & 0.124 & 0.103 &\\ \bottomrule
-\end{tabular}
-\end{center}
-\caption{Offsets das posi\c{c}\~oes dos TNOs obtidas usando a redu\c{c}\~ao astrom\'etrica com o PRAIA e o modelo de corre\c{c}\~ao do DES com rela\c{c}\~ao \`as posi\c{c}\~oes calculado pelas efem\'erides. Onde Mag. \'e a magnitude visual, $d$ \'e a dist\^ancia helioc\^entrica no instante da observa\c{c}\~ao.} \label{tab:resultados} 
-\end{table}
-
-Os desvios padrões $\sigma$ obtidos no caso do TNO 2005 RN$_{43}$ com o cat\'alogo de usu\'ario (WFI\footnote{O telescópio ESO/MPG de 2.2 m est\'a equipado com o Wide Field Imager (WFI). Isso foi usado para fazer cat\'alogos que servem como referência astrométrica para a determinação da posição de alguns TNOs selecionados.}) foram bem melhores que aqueles obtidos com o UCAC4 por conta de serem mais densos e possuírem melhor coerência interna. Isto será ainda melhor com o GAIA nas mãos. Ainda precisamos fazer mais testes para poder ter uma melhor vis\~ao dos resultados.
-
-\subsection{Dificultades encontradas}
-
-\begin{itemize}
-\item Uma das dificultades encontradas foi que o servi\c{c}o SkyBoT teve algumas atualiza\c{c}\~oes recentes, e o Astropy teve alguns problemas para ler os arquivos de saida gerados pelo SkyBoT. O problema estava na defini\c{c}\~ao de um dos par\^ametros adicionados e ent\~ao foi reportado para o respons\'avel, o Dr. Jerome Berthier, e ele prontamente consertou o problema.
-\item Considerando que o SkyBoT \'e um servi\c{c}o online, toma um certo tempo acessar ao servi\c{c}o e esse tempo \'e consider\'avel levando em conta a quantidade de dados. Para resolver esta dificuldade está sendo instalado o SkyBoT nas instala\c{c}\~oes do LIneA e assim poder usar o servi\c{c}o de forma local e reduzir o tempo de busca.
-\item As imagens do levantamento DES s\'o s\~ao disponibilizados um ano depois da data da observa\c{c}\~ao, o que significaria que n\~ao poderiamos ter acesso \`as imagens mais recentes. O trabalho do meu mestrado ajudou ao projeto ``\textit{Identifying known Solar System objects in DES images and predicting stellar occultations by them}'', liderado pelo Dr. Julio camargo e eu tamb\'em sou membro oficial, que foi aprovado recentemente pelo comit\^e de gerenciamento do DES para explorar seus dados observacionais com um fim espec\'ifico: localizar TNOs conhecidos nas imagens oriundas de seu levantamento, determinar posi\c{c}\~oes precisas desses objetos, refinar suas \'orbitas com aux\'ilio dessas posi\c{c}\~oes, e determinar os respectivos mapas de oculta\c{c}\~ao (figuras indicando quando e onde, sobre a Terra, tais eventos poderão ser observados). Ent\~ao como membro desta colabora\c{c}\~ao externa do DES ser\'a poss\'ivel ter acesso \`as imagens recentes.
-\end{itemize}
-
-\end{comment}
+%===================================================================
 \section{Pr\'oximas etapas}
+%===================================================================
 
-As atividades acad\^emicas ser\~ao conclu\'idas no seguinte semestre.
-
-\noindent As atividades de pesquisa previstas para o pr\'oximo per\'iodo ser\~ao:
+As atividades de pesquisa previstas para o pr\'oximo per\'iodo ser\~ao:
 
 \begin{enumerate}
-\item Processo de qualifica\c{c}\~ao.
-\item Continuar com a instala\c{c}\~ao e testar os c\'odigos \textit{PRAIA} e \textit{NIMA} no portal desenvolvido pelo \textit{LIneA} assim como os scripts necess\'arios que ser\~ao a base para a cria\c{c}\~ao do pipeline de previs\~ao de oculta\c{c}\~oes.
-\item Aplicar SkyBoT \`as novas imagens geradas no quarto ano de funcionamento do DES (setembro de 2016 a fevereiro de 2017).
-\item Fazer um censo dos corpos do Sistema Solar e identificar TNOs/Centauros na \'area coberta pelo levantamento DES no quarto ano.
-\item Recuperar as novas imagens com observa\c{c}\~oes de TNOs e fazer a an\'alise astrom\'etrica.
-\item Refinar as \'orbitas dos TNOs e Centauros.
+\item Processar imagens obtidas durante o ano 2016 pelo telescópio 2,2 m do ESO.
+\item Determinar a astrometria usando o pacote PRAIA. 
+\item Determinar a astrometria de Chariklo a partir da ocultação observada o dia 24 de Agosto de 2017. 
+\item Obter os dados da segunda liberação do satélite GAIA que esta prevista para abril do 2018.
+\item Reproduzir as metodologias utilizadas para a determinação da astrometria de TNOs e Centauros usando o catalogo de estrelas com dados da segunda liberação.
 \end{enumerate}
 
 \begin{table}[H]
@@ -259,19 +184,14 @@ As atividades acad\^emicas ser\~ao conclu\'idas no seguinte semestre.
 \label{tab:cronograma}
 \end{table}
  
- \newpage
-%\bibliographystyle{plain}
+\newpage
 \bibliographystyle{plainnat}
-%\bibliographystyle{unsrtnat}
-%\bibliographystyle{abbrvnat}
-%\bibliographystyle{ksfh_nat}
 \bibliography{bibliografia} 
-
 \vfill \hfill
 \begin{tabular}{c}
-%\includegraphics{firma1Negro.png}
+
 \\ \hline
-\textsc{Martin Banda Huarca}
+\textsc{Fredi Quispe H.}
 \end{tabular}
 
 \end{document}
