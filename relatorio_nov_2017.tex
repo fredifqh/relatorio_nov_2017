@@ -34,28 +34,30 @@
 
 \subsection{Objetivo científico}
 
-A astrometria de objetos transnetunianos (TNOs) e Centauros pode ser determinada de duas formas: 1) tomando imagens diretas do corpo contendo estrelas em torno de eles (estrelas de referencia) e 2) atraves de ocultações estelares. Em qualquer dos casos, a astrometria depende da precisão astrométrica das estrelas de referencia. Neste sentido, os dados obtidos pela missão astrométrica GAIA (Global Astrometric Instrument for Astrophysics), a qual fornecera a astrometria para aproximadamente um bilhão de estrelas com magnitudes até 20 com uma precisão da ordem dos micro segundos ($\mu$as), permitira melhorar significativamente a precisão astrométrica dos TNOs e Centauros.
+\textcolor{blue}{O grande cen\'ario para o estudo de pequenos corpos al\'em da \'orbita de Netuno (transnetunianos ou TNOs, na sigla em ingl\^es) est\'a no fato de que estes s\~ao objetos que melhor conservaram em si caracter\'{\i}sticas do sistema solar primordial. Em outras palavras, trata-se de f\'osseis, relativamente inalterados por conta de suas grandes dist\^ancias do Sol, da forma\c c\~ao do sistema solar.}
 
-Conforme mencionado anteriormente, o objetivo cientifico do projeto de mestrado é, \textbf{usando a solução astrométrica GAIA contemplando os 5 parâmetros - posições, paralaxes, e movimentos próprios - a qual será liberada em Junho de 2017, determinar a astrometría de TNOs e Centauros usando imagens recentes e de época antiga, e atraves de ocultações estelares}.
+\textcolor{blue}{Centauros s\~ao objetos em \'orbitas inst\'aveis entre J\'upiter e Netuno, com prov\'avel origem na regi\~ao transnetuniana. Por isso, e por suas menores dist\^ancias helioc\^entricas quando comparadas \`as dos TNOs, os Centauros s\~ao considerados similares com maior brilho dos transnetunianos. Assim, s\~ao tamb\'em relavantes em estudos ligados \`a origem e forma\c c\~ao do sistema solar externo.}
+
+\textcolor{blue}{Uma forma de se estudar tais objetos \'e atrav\'es de oculta\c c\~oes estelares, ou seja, da an\'alise da curva de luz oriunda da oculta\c c\~ao de uma estrela por um TNO ou Centauro. Certamente, a predi\c c\~ao de eventos de oculta\c c\~ao \'e um passo essential nesse estudo. Neste contexto, e tamb\'em visando o grande n\'umero de objetos al\'em da \'orbita de Netuno que ser\~ao descobertos por grandes levantamentos, os objetivos deste trabalho s\~ao: astrometria de imagens diretas a partir do solo de TNOs e Centauros usando o cat\'alogo Gaia; manuten\c c\~ao de base de dados com predi\c c\~oes de oculta\c c\~oes estelares para os TNOs e Centauros conhecidos; determina\c c\~ao de uma posi\c c\~ao do Centauro Chariklo atrav\'es da an\'alise de curva de luz oriunda da  oculta\c c\~ao estelar ocorrida em 24/AGO/2017.}
 
 \subsection{Estado da arte}
 
-A técnica de ocultação estelar por TNOs e Centauros, complementada por outras técnicas, permite obter o tamanho de esses corpos na ordem do quilômetro, caracterizar sua forma, e revelar propiedades muito interessantes como anéis \citep{2017Natur.550..219O, 2014AGUFM.P43F..01B} e atmosferas em torno de eles \citep{1538-3881-136-5-1757, 2006Natur.439...52S}. No entanto, devido a que os TNOs e Centauros são pequenos (menores que 2400 km) e dada suas distancias a partir do Sol (entre  5 - 30 ua para os centauros, e maior que 30 ua para os TNOs) possuem baixo brilho (magnitudes maiores que 20), a previsão de ocultações por esses objetos não é uma tarefa simples. 
+\textcolor{blue}{At\'e o momento, foram reduzidas XX imagens obtidas no telesc\'opio de 2.2m do ESO com a c\^amera WFI. Estas imagens dizem respeito aos objetos 2002UX25, ... e utilizaram o Gaia DR1 como refer\^encia astrom\'etrica. Temos todos os procedimentos devidamente organizados para uma nova redu\c c\~ao dessas imagens com o Gaia DR2 (Abril 2018) assim que os dados estiverem dispon\'{\i}veis.}
 
-Para a predição de ocultações estelares é necessário conhecer a astrometria do corpo e da estrela que será ocultada. A astrometria do corpo é determinada a partir de imagens usando estrelas de referencia e a astrometria da estrela ocultada e das estrelas de referencia são tiradas de catálogos estelares. No passar do tempo, a precisão na posição das estrelas dos catálogos foi acrescentando com o uso de telescópios de grande porte. Não obstante, a precisão aumento consideravelmente com a missão espacial astrométrica Hipparcos produzindo um mapeamento de 120 000 estrelas no ordem de milissegundos. Devido ao exito da missão Hipparcos, foi lançada a missão GAIA, a qual permitira medir a posição das estrelas no ordem de microssegundos.
+\textcolor{blue}{Assumi a manuten\c c\~ao e atualiza\c c\~ao da base de dados de oculta\c c\~oes estelares hospedadas em http://www.linea.gov.br/020-data-center/acesso-a-dados-3/tno-dados/. Como ser\'a descrito mais adiante, esta base mant\'em predi\c c\~oes para mais de 2\,600 TNOs/Centauros e temos a inten\c c\~ao de autalizar o n\'umero de objetos bem como as efem\'erides utilizadas 2 vezes ao ano.}
 
-Esses resultados permitiram ter uma precisão maior na solução astrométrica dos TNOs e Centauros, e por conseguinte, melhorar significativamente a predição de ocultações.
 \newpage     
 \subsection{Metodologia}
 
-A metodologia para conseguir nosso objetivo será dividida em duas partes:
+A metodologia para conseguir nosso objetivo será dividida em três partes:
 
 \subsubsection{Metodologia para obter a astrometria usando imagens}
 \begin{enumerate}
-  \item Revisitar a base de imagens recentes e época antiga dos TNOs e Centauros que foram obtidas com a câmera WFI (Wide Field Manager) instalada no telescópio de 2,2m do ESO.
+  \item Revisitar a base de imagens recentes (2016) e antigas (2012) dos TNOs e Centauros que foram obtidas com a câmera WFI (Wide Field Manager) instalada no telescópio de 2,2m do ESO.
   \item Processar imagens utilizando o pacote esowfi no IRAF (Image Reduction And Analysis Facility) para aquelas que ainda não foram processadas.
   \item Determinar a astrometria dos corpos utilizando o pacote PRAIA (Platform for Reduction of Astronomical Images Automatically) usando os dados do catalogo GAIA.
 \end{enumerate}
+
 \subsubsection{Metodologia para obter a astrometria atraves de ocultações estelares}
 \begin{enumerate}
   \item Analisar as curvas de luz de ocultações estelares observadas.
@@ -63,9 +65,27 @@ A metodologia para conseguir nosso objetivo será dividida em duas partes:
   \item Determinar a posição do centro do objeto.
   \item Obter a astrometria do corpo usando a posição da estrela ocultada.
 \end{enumerate}
+
+\subsubsection{Metodologia para a manuten\c c\~ao e atualiza\c c\~ao da base de dados de predi\c c\~oes}
+\begin{enumerate}
+  \item Buscar no Johnston's Archive (http://www.johnstonsarchive.net/astro/tnoslist.html) a lista dada de TNOs e Centauros conhecidos
+  \item Baixar arquivos SPK\footnote{Arquivos que cont\'em dados de efem\'erides de objetos do sistema solar.} de todos esses corpos a partir do JPL. Para isso, scritp desenvolvido pelo JPL \'e utilizado.
+  \item A partir desses arquivos, utiliza-se c\'odigo baseado em rotinas do sistema SPICE para se gerar efem\'erides geoc\^entricas, em passos de 10 minutos, para todos esses objetos para um dado ano (por exemplo, 2018).
+  \item Obt\'em-se estrelas Gaia nas vizinhan\c cas de cada \'orbita anual.
+  \item Cruza-se as posi\c c\~oes de efem\'erides com as respectivas posi\c c\~oes estelares nas vizinhan\c cas das \'orbitas.
+  \item Gera-se os mapas de oculta\c c\~ao.
+\end{enumerate}
+
 \subsection{Resultados esperados}
 
-Depois de aplicar as metodologias descritas acima nós esperamos ter a astrometria de TNOs e Centauros usando a informação mais precisa das estrelas do catalogo que será fornecido pelo satélite GAIA:
+Das metodologias eu espero ter o seguintes resultados:
+\begin{itemize}
+  \item Da primeira, eu espero ter obtido a posição de 40 TNOs e 6 Centauros com precisão entre 5 e 30 mas.
+  \item Da segunda, eu espero dominar o processo para se obter posições a partir ocultações estelares. Neste trabalho pretendo determinar a posição de Chariklo usando a ocultação observada o dia 24 de Agosto de 2017, com uma precisão no ordem de mas. 
+  \item Finalmente, da ultima eu espero desenvolver o procedimento para se atualizar a base de dado de previsão de ocultações.    
+\end{itemize}
+
+
 
 \section{Informa\c{c}\~oes curriculares}
 
@@ -89,22 +109,22 @@ Depois de aplicar as metodologias descritas acima nós esperamos ter a astrometr
 \subsection{Cursos e reuni\~oes cient\'ificas}
 
 \begin{itemize}
-	\item Participação no XXI Ciclo de Cursos Especiais ON/MCT, 2016, nos seguintes temas: 
+  \item Participação no XXI Ciclo de Cursos Especiais ON/MCT, 2016, nos seguintes temas: 
 
   Computational Cosmology: Simulating Cosmic Structures, Prof. August Evrard (University of Michigan, US); \\
   Comets: Origin, Evolution and Interrelations, Prof. Julio Fernández (University of the Republic, Uruguay); \\
   Advanced stellar evolution: basic properties, nucleosynthesis, and final fates, Prof. Paola Marigo (University of Padova, Italia).
 
-	\item Participação na Second Astrobiology school at Observatório Nacional. 2016, realizado no Rio de Janeiro, ON-MCTI, nos seguintes temas: 
+  \item Participação na Second Astrobiology school at Observatório Nacional. 2016, realizado no Rio de Janeiro, ON-MCTI, nos seguintes temas: 
 
   Star Formation and Planet Formation and Habitability: From the Solar neighborhood to the Multiverse, Prof. Fred C. Adams (University of Michigan, USA); \\ The Pathway to Earth 2.0: Discovery and Characterization of the Nearest Exo-Earths, Prof. James S. Jenkins (Universidad de Chile); \\
   Dust in Protoplanetary Disks: The first Steps of Planet Formation, Prof. Isa Oliveira (Observatorio Nacional, Brasil); \\
   Degradation of amino acids by cosmic radiation, Prof. Enio Frota da silveira; \\
   Kepler Mission: Planet Candidates Characteristics and Earth Analogs Ocurrences Rates, Prof. Eduardo Seperuelo Duarte (UFRJ); \\
   Energetic Processing of Materials Relevant to Astrobiology, Prof. Daniele Fulvio (PUC do Rio de Janeiro)
-	
+  
 
-	\item Participação no XXII Ciclo de Cursos Especiais ON/MCT, 2017, nos seguintes temas: 
+  \item Participação no XXII Ciclo de Cursos Especiais ON/MCT, 2017, nos seguintes temas: 
 
   Extrasolar Planets Around Nearby Stars, Dr. R. Paul Butler (Carnegie Institution of Washington, EUA); \\
   Observing the Formation and Evolution of Galaxies over 13 Billion Years, Dr. Christopher Conselice (University of Nottingham, Reino Unido); \\
@@ -122,9 +142,10 @@ Alem das atividades para cumprir com o objetivo cientifico, participe das seguin
 
 \begin{enumerate}
   \item Participação na construção do site \url{http://www.linea.gov.br/020-data-center/acesso-a-dados-3/tno-dados/}, a qual fornece predição de ocultações para TNOs e Centauros. 
-  \item Participação em campanhas de observação 
+  \item Participação em campanhas de observação nos telescópios do observatório Picos dos Dias. 
   \begin{itemize}
     \item Julho (noite 27 e 28)
+    \item Agosto (noite 9 e 23) % 
     \item Setembro (noites 19 e 20)
     \item Outubro (noites 21 e 22)
   \end{itemize}
@@ -161,11 +182,10 @@ A principal dificuldade centrou-se na utilização da ferramenta PRAIA, a qual e
 As atividades de pesquisa previstas para o pr\'oximo per\'iodo ser\~ao:
 
 \begin{enumerate}
-\item Processar imagens obtidas durante o ano 2016 pelo telescópio 2,2 m do ESO.
-\item Determinar a astrometria usando o pacote PRAIA. 
+\item Redução imagens obtidas durante o ano 2016 pelo telescópio 2,2 m do ESO.
 \item Determinar a astrometria de Chariklo a partir da ocultação observada o dia 24 de Agosto de 2017. 
-\item Obter os dados da segunda liberação do satélite GAIA que esta prevista para abril do 2018.
-\item Reproduzir as metodologias utilizadas para a determinação da astrometria de TNOs e Centauros usando o catalogo de estrelas com dados da segunda liberação.
+\item Obter os dados da segunda liberação do satélite GAIA que esta prevista para abril do 2018. Retomar as redu\c c\~oes
+\item Integrar os scripts utilizados na atualiza\c c\~ao do banco de oculta\c c\~oes estelares para obtermos um procedimento autom\'atico para tal tarefa.
 \end{enumerate}
 
 \begin{table}[H]
