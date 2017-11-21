@@ -15,7 +15,7 @@
 \usepackage{comment}
 \usepackage[compress,comma,]{natbib}
 \usepackage[bottom]{footmisc}    %footnote in bottom position
-
+\usepackage{enumitem}
 \marginsize{2.5cm}{2cm}{2cm}{2cm}
 
 
@@ -34,7 +34,7 @@
 
 \subsection{Objetivo científico}
 
-\textcolor{blue}{O grande cen\'ario para o estudo de pequenos corpos al\'em da \'orbita de Netuno (transnetunianos ou TNOs, na sigla em ingl\^es) est\'a no fato de que estes s\~ao objetos que melhor conservaram em si caracter\'{\i}sticas do sistema solar primordial. Em outras palavras, trata-se de f\'osseis, relativamente inalterados por conta de suas grandes dist\^ancias do Sol, da forma\c c\~ao do sistema solar.}
+\textcolor{blue}{A importância do estudo de pequenos corpos al\'em da \'orbita de Netuno (transnetunianos ou TNOs, na sigla em ingl\^es) est\'a no fato de que estes s\~ao objetos que melhor conservaram em si caracter\'{\i}sticas do sistema solar primordial. Em outras palavras, por conta de suas grandes dist\^ancias do Sol trata-se de f\'osseis, relativamente inalterados da forma\c c\~ao do sistema solar.}
 
 \textcolor{blue}{Centauros s\~ao objetos em \'orbitas inst\'aveis entre J\'upiter e Netuno, com prov\'avel origem na regi\~ao transnetuniana. Por isso, e por suas menores dist\^ancias helioc\^entricas quando comparadas \`as dos TNOs, os Centauros s\~ao considerados similares com maior brilho dos transnetunianos. Assim, s\~ao tamb\'em relavantes em estudos ligados \`a origem e forma\c c\~ao do sistema solar externo.}
 
@@ -44,7 +44,7 @@
 
 \textcolor{blue}{At\'e o momento, foram reduzidas XX imagens obtidas no telesc\'opio de 2.2m do ESO com a c\^amera WFI. Estas imagens dizem respeito aos objetos 2002UX25, ... e utilizaram o Gaia DR1 como refer\^encia astrom\'etrica. Temos todos os procedimentos devidamente organizados para uma nova redu\c c\~ao dessas imagens com o Gaia DR2 (Abril 2018) assim que os dados estiverem dispon\'{\i}veis.}
 
-\textcolor{blue}{Assumi a manuten\c c\~ao e atualiza\c c\~ao da base de dados de oculta\c c\~oes estelares hospedadas em http://www.linea.gov.br/020-data-center/acesso-a-dados-3/tno-dados/. Como ser\'a descrito mais adiante, esta base mant\'em predi\c c\~oes para mais de 2\,600 TNOs/Centauros e temos a inten\c c\~ao de autalizar o n\'umero de objetos bem como as efem\'erides utilizadas 2 vezes ao ano.}
+\textcolor{blue}{Assumi a manuten\c c\~ao e atualiza\c c\~ao da base de dados de oculta\c c\~oes estelares hospedadas em \url{http://www.linea.gov.br/020-data-center/acesso-a-dados-3/tno-dados/}. Como ser\'a descrito mais adiante, esta base mant\'em predi\c c\~oes para mais de 2\,600 TNOs/Centauros e temos a inten\c c\~ao de autalizar o n\'umero de objetos bem como as efem\'erides utilizadas 2 vezes ao ano.}
 
 \newpage     
 \subsection{Metodologia}
@@ -60,10 +60,10 @@ A metodologia para conseguir nosso objetivo será dividida em três partes:
 
 \subsubsection{Metodologia para obter a astrometria atraves de ocultações estelares}
 \begin{enumerate}
-  \item Analisar as curvas de luz de ocultações estelares observadas.
-  \item Ajustar a forma do corpo às curvas de luz.
+  \item Analisar as curvas de luz de ocultações estelares observadas para obter os tempos de imersão e emersão (cordas).
+  \item Ajustar a forma do corpo ás cordas.
   \item Determinar a posição do centro do objeto.
-  \item Obter a astrometria do corpo usando a posição da estrela ocultada.
+  \item Obter a posição relativa da posição do centro com a estrela ocultada.
 \end{enumerate}
 
 \subsubsection{Metodologia para a manuten\c c\~ao e atualiza\c c\~ao da base de dados de predi\c c\~oes}
@@ -80,12 +80,10 @@ A metodologia para conseguir nosso objetivo será dividida em três partes:
 
 Das metodologias eu espero ter o seguintes resultados:
 \begin{itemize}
-  \item Da primeira, eu espero ter obtido a posição de 40 TNOs e 6 Centauros com precisão entre 5 e 30 mas.
-  \item Da segunda, eu espero dominar o processo para se obter posições a partir ocultações estelares. Neste trabalho pretendo determinar a posição de Chariklo usando a ocultação observada o dia 24 de Agosto de 2017, com uma precisão no ordem de mas. 
-  \item Finalmente, da ultima eu espero desenvolver o procedimento para se atualizar a base de dado de previsão de ocultações.    
+  \item Da primeira, eu espero ter obtido a posição de 40 TNOs e 6 Centauros com precisão entre 5 e 30 $mas$ usando a segunda liberação de dados de GAIA.
+  \item Da segunda, eu espero dominar o processo para se obter posições a partir ocultações estelares. Neste trabalho pretendo determinar a posição de Chariklo usando a ocultação observada o dia 24 de Agosto de 2017, com uma precisão na ordem de mas. 
+  \item Da ultima, eu espero desenvolver o procedimento automático para se atualizar a base de dados de previsão de ocultações do site,  \url{http://www.linea.gov.br/020-data-center/acesso-a-dados-3/tno-dados/} .    
 \end{itemize}
-
-
 
 \section{Informa\c{c}\~oes curriculares}
 
@@ -165,7 +163,70 @@ Este é o meu primeiro relatório como aluno do DPPG.
 %===================================================================
 \subsection{Resultados parciais já obtidos}
 %===================================================================
+
 Foram determinadas a astrometria de 43 TNOs usando as imagens obtidas durante o ano 2013 pelo telescópio 2,2 m do ESO, e a primeira liberação de dados (Gaia DR1). A tabela que se segue mostra os resultados já obtidos.  
+
+\begin{table}[!h]
+\begin{center}
+%\textbf{Table}
+\scalebox{0.8}{
+\begin{tabular}{|l|c|c|c|} 
+\hline 
+ID          & Clase &          RA(h m s)       &         Dec(d m s)        \\
+\hline
+1995GO      &  Cen &  03 32 53.848800000002655 & +34 31 51.780000000001678 \\
+1995SM55    &  TNO &  02 39 18.736800000001779 & +28 43 44.435999999995772 \\
+1997CU26    &  Cen &  17 04 18.000000000008356 & -40 36 02.988000000007105 \\
+1999DE9     &  TNO &  11 47 04.920000000009424 & -03 40 19.077599999999535 \\
+1999TC36    &  TNO &  01 47 53.056800000001516 & +02 20 50.521200000000732 \\
+2000EB173   &  TNO &  15 32 40.464000000008866 & -04 26 56.140800000001576 \\
+2000QC243   &  Cen &  00 58 50.539200000000903 & +23 52 12.648000000004629 \\
+2002AW197   &  TNO &  09 28 57.216000000010752 & +02 33 29.527200000000420 \\
+2002GB10    &  Cen &  17 24 11.808000000008292 & -34 41 33.431999999992854 \\
+2002GO9     &  Cen &  19 18 14.280000000016173 & -19 24 05.796000000005677 \\
+2002KX14    &  TNO &  16 41 21.984000000016977 & -22 27 06.552000000005194 \\
+2002MS4     &  TNO &  18 24 07.920000000014795 & -07 48 39.520800000001515 \\
+2002TC302   &  TNO &  02 08 56.332800000001875 & +23 44 36.815999999995199 \\
+2002UX25    &  TNO &  02 21 27.760800000002064 & +09 37 52.921199999996844 \\
+2002VE95    &  TNO &  05 08 39.091200000004349 & +08 49 17.378399999998209 \\
+2002WC19    &  TNO &  05 19 00.352800000003697 & +18 20 16.800000000003479 \\
+2003AZ84    &  TNO &  07 48 02.352000000005177 & +11 09 46.800000000000921 \\
+2003FY128   &  TNO &  12 56 49.704000000009927 & -14 05 35.304000000000002 \\
+2003MW12    &  TNO &  17 02 53.472000000010951 & -02 01 56.215199999999719 \\
+2003OP32    &  TNO &  21 52 24.408000000011327 & +02 43 53.108399999999563 \\
+2003UZ413   &  TNO &  03 15 56.119200000000902 & +05 20 49.318799999998930 \\
+2003VS2     &  TNO &  04 32 3.3936000000036870 & +34 04 24.168000000000802 \\
+2004GV9     &  TNO &  14 22 45.144000000006486 & -26 03 15.444000000006213 \\
+2004NT33    &  TNO &  21 08 08.208000000020093 & +16 16 34.896000000001379 \\
+2004PF115   &  TNO &  22 27 26.856000000016707 & -23 01 15.960000000002026 \\
+2004SB60    &  TNO &  22 58 26.424000000016861 & +19 02 29.003999999999337 \\
+2004TY364   &  TNO &  02 33 15.496800000002509 & -10 39 41.688000000002603 \\
+2004UX10    &  TNO &  02 20 07.382400000001255 & +04 28 28.642800000000861 \\
+2005CC79    &  Cen &  12 33 10.128000000011355 & -24 21 18.612000000003945 \\
+2005QU182   &  TNO &  01 03 32.724000000001112 & -07 25 46.117200000001191 \\
+2005RM43    &  TNO &  04 15 24.672000000004957 & +09 20 49.743600000000754 \\
+2005RN43    &  TNO &  22 12 18.768000000011682 & +00 08 39.013080000000038 \\
+2005RR43    &  TNO &  04 02 46.245600000001659 & +06 31 38.550000000000537 \\
+2005UQ513   &  TNO &  00 22 40.958400000000168 & +29 42 03.383999999997229 \\
+2007JH43    &  TNO &  16 03 03.312000000017861 & -19 55 08.867999999996812 \\
+2007JJ43    &  TNO &  16 12 17.568000000010215 & -26 53 21.912000000004355 \\
+2007OR10    &  TNO &  22 17 54.144000000015353 & -13 50 23.495999999999384 \\
+2007UK126   &  TNO &  04 19 30.772800000003144 & -01 19 43.327200000000232 \\
+2008OG19    &  TNO &  20 10 34.368000000011989 & -11 17 43.079999999997227 \\
+2010EK139   &  TNO &  13 21 06.000000000012449 & -33 01 01.487999999999942 \\
+IXION       &  TNO &  17 16 44.880000000015627 & -26 07 55.200000000005218 \\
+ORCUS       &  TNO &  09 52 09.744000000007986 & -07 17 11.003999999999721 \\
+QUAOAR      &  TNO &  17 39 31.008000000018967 & -15 28 43.932000000002063 \\
+\hline
+
+%           \hline
+\end{tabular}}
+\end{center}
+\end{table}
+
+
+
+
 %======================================================================
 \subsection{Dificuldades encontradas e como elas estão sendo superadas}
 A principal dificuldade centrou-se na utilização da ferramenta PRAIA, a qual esta sendo superada pela ajuda do manual do pacote, e pela supervisão do orientador.  
@@ -176,34 +237,60 @@ A principal dificuldade centrou-se na utilização da ferramenta PRAIA, a qual e
 %======================================================================
 
 %===================================================================
-\section{Pr\'oximas etapas}
+\section{Proposta para as próximas etapas}
 %===================================================================
 
+\subsection{Atividades de pesquisa previstas para o próximo período}
 As atividades de pesquisa previstas para o pr\'oximo per\'iodo ser\~ao:
 
 \begin{enumerate}
 \item Redução imagens obtidas durante o ano 2016 pelo telescópio 2,2 m do ESO.
 \item Determinar a astrometria de Chariklo a partir da ocultação observada o dia 24 de Agosto de 2017. 
-\item Obter os dados da segunda liberação do satélite GAIA que esta prevista para abril do 2018. Retomar as redu\c c\~oes
+\item Obter os dados da segunda liberação do satélite GAIA que esta prevista para abril do 2018. Retomar as redu\c c\~oes.
 \item Integrar os scripts utilizados na atualiza\c c\~ao do banco de oculta\c c\~oes estelares para obtermos um procedimento autom\'atico para tal tarefa.
 \end{enumerate}
+%------------------------------------------------------------------------------
+\subsection{Atividades acadêmicas previstas para o próximo período}
 
+As atividades acadêmicas previstas para o pr\'oximo per\'iodo ser\~ao:
+
+\begin{enumerate}[resume]
+  \item Apresentar a pesquisa desenvolvida na Jornada de Seminários da PG-Astronomia.
+  \item Exame de proficiência.
+  \item Defensa da dissertação de mestrado.  
+\end{enumerate}
+%-------------------------------------------------------------------------------
+\subsection{Cronograma detalhado das atividades}
+Segundo as propostas, em seguida se mostra uma tabela com o cronograma de atividades,
 \begin{table}[H]
 \centering
 \begin{tabular}{cccccccccccc}
-\toprule \multirow{2}{*}{\textbf{Atividade}}& \multicolumn{8}{c}{\textbf{2016}} & \multicolumn{3}{c}{\textbf{2017}} \\ \cline{2-12}
-  & \textbf{Abr} & \textbf{Mai} & \textbf{Jun} & \textbf{Jul} & \textbf{Ago} & \textbf{Out} & \textbf{Nov} & \textbf{Dez} & \textbf{Jan} & \textbf{Fev} & \textbf{Mar}\\ \midrule 
-1 & X & X &   &   &   &   &   &   &   &   &   \\ 
-2 &   &   & X &   &   &   &   &   &   &   &   \\
-3 &   &   & X & X &   &   &   &   &   &   &   \\ 
-4 &   &   &   &   & X & X &   &   &   &   &   \\
-5 &   &   &   &   &   &   & X & X & X & X &   \\
-6 &   &   &   &   &   &   &   &   & X & X & X \\ \bottomrule
+\toprule \multirow{2}{*}{\textbf{Atividade}}& \multicolumn{1}{c}{\textbf{2017}} & \multicolumn{9}{c}{\textbf{2018}} \\ \cline{2-12}
+  & \textbf{Dez} & \textbf{Jan} & \textbf{Fev} & \textbf{Mar} & \textbf{Abr} & \textbf{Mai} & \textbf{Jun} & \textbf{Jul} & \textbf{Ago} & \textbf{} & \textbf{}\\ \midrule 
+1 & X & X &   &   &   &   &   &   &   &   \\ 
+2 &   &   & X & X &   &   &   &   &   &   \\
+3 &   &   &   &   & X & X &   &   &   &   \\ 
+4 &   &   &   &   & X & X & X & X &   &   \\ 
+5 &   &   &   & X &   &   &   &   &   &   \\
+6 &   &   &   &   & X &   &   &   &   &   \\
+7 &   &   &   &   &   &   &   &   & X &   \\ \bottomrule
 \end{tabular}
 \caption{Cronograma das pr\'oximas etapas.}
 \label{tab:cronograma}
 \end{table}
- 
+%------------------------------------------------------------------------------------ 
+
+%==============================================================
+\section{g. Parecer do orientador, a ser anexado ao relatório, contendo os seguintes itens:}
+
+\subsection{Avaliação   da   atividade   do   aluno,   apontando   possíveis   inconvenientes   no desenvolvimento do projeto}
+\subsection{Data prevista de conclusão}
+\subsection{O “de acordo” com o relatório e o cronograma proposto}
+
+%==============================================================
+\section*{h. Assinaturas do aluno e do orientador e/ou coorientador, quando houver.}
+%==============================================================
+
 \newpage
 \bibliographystyle{plainnat}
 \bibliography{bibliografia} 
