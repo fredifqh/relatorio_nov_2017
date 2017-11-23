@@ -155,21 +155,17 @@ Este é o meu primeiro relatório como aluno do DPPG.
 %===================================================================
 \subsection{Metodologia aplicada}
 %===================================================================
-Para obter a astrometria de TNOs e Centauros, at\'e o momento, foram reduzidas 1328 imagens obtidas no telesc\'opio de 2.2m do ESO com a c\^amera WFI durante os anos 2012 e 2013. As reduções foram feitas usando a ferramenta \textit{esowfi} no IRAF. As imagens reduzidas correspondem aos objetos mostradas na primeira coluna da tabela \ref{table:incerteza}. Para obter a posição dos corpos foi utilizada a ferramenta PRAIA e os dados do Gaia DR1 como refer\^encia astrom\'etrica. 
+Para obter a astrometria de TNOs e Centauros, at\'e o momento, foram reduzidas 1328 imagens obtidas no telesc\'opio de 2.2m do ESO com a c\^amera WFI durante os anos 2012 e 2013. As reduções (Bias e Flat) foram feitas usando a ferramenta \textit{esowfi} no IRAF. As imagens reduzidas correspondem aos objetos mostradas na primeira coluna da tabela \ref{table:incerteza}. Para obter a posição dos corpos as imagens foram fornecidas à ferramenta PRAIA usando os dados do Gaia DR1 como refer\^encia astrom\'etrica. 
 
-Para a manutenção e atualização da base de dados de ocultações estelares hospedadas em \url{http://www.linea.gov.br/020-data-center/acesso-a-dados-3/tno-dados/}, foi desenvolvido um \textit{script} para obter de forma automática a informação do diâmetro do corpo, usando a tabela con informação dos TNOs fornecida no site \url{http://www.johnstonsarchive.net/astro/tnoslist.html}. Este \textit{script} permite automatizar el processo para a previsão de ocultações estelares.     
+Para a manutenção e atualização da base de dados de ocultações estelares hospedadas em \url{http://www.linea.gov.br/020-data-center/acesso-a-dados-3/tno-dados/}, foi desenvolvido um \textit{script} para obter de forma automática a informação do diâmetro do corpo usando a tabela con informação dos TNOs fornecida no site \url{http://www.johnstonsarchive.net/astro/tnoslist.html}. Este \textit{script} permite automatizar o processo para a previsão de ocultações estelares.     
 
-
-Temos todos os procedimentos devidamente organizados para uma nova redu\c c\~ao dessas imagens com o Gaia DR2 (Abril 2018) assim que os dados estiverem dispon\'{\i}veis.
-
-Assumi a manuten\c c\~ao e atualiza\c c\~ao da base de dados de oculta\c c\~oes estelares hospedadas em \url{http://www.linea.gov.br/020-data-center/acesso-a-dados-3/tno-dados/}. Como ser\'a descrito mais adiante, esta base mant\'em predi\c c\~oes para mais de 2\,600 TNOs/Centauros e temos a inten\c c\~ao de autalizar o n\'umero de objetos bem como as efem\'erides utilizadas 2 vezes ao ano.
 %===================================================================
 \subsection{Resultados parciais já obtidos}
 %===================================================================
 
 Foram determinadas a astrometria de 43 TNOs usando as imagens obtidas durante o ano 2013 pelo telescópio 2,2 m do ESO, e a primeira liberação de dados (Gaia DR1). A tabela que se segue mostra os resultados já obtidos.  
 
-\begin{table}[!h]
+\begin{table}
 \begin{center}
 \caption{A tabela mostra as incertezas associadas à posição dos TNO e Centauros ($\sigma_{\alpha} \cos \delta, \sigma_{\delta}$)}
 \vspace{0.3 cm}
@@ -179,8 +175,8 @@ Foram determinadas a astrometria de 43 TNOs usando as imagens obtidas durante o 
 \hline 
 ID          & Clase &  $\sigma_{\alpha} \cos \delta $& $\sigma_{\delta} $        \\
 \hline
-1995GO      &  Cen &      &    \\
-1995SM55    &  TNO &      &    \\
+1995GO      &  Cen &0.0235&0.0095\\
+1995SM55    &  TNO &0.0205&    \\
 1997CU26    &  Cen &      &    \\
 1999DE9     &  TNO &      &    \\
 1999TC36    &  TNO &      &    \\
@@ -282,17 +278,17 @@ Segundo as propostas, em seguida se mostra uma tabela com o cronograma de ativid
 %------------------------------------------------------------------------------------ 
 
 %==============================================================
-\section{g. Parecer do orientador, a ser anexado ao relatório, contendo os seguintes itens:}
+\section{Parecer do orientador, a ser anexado ao relatório, contendo os seguintes itens:}
 
 \subsection{Avaliação   da   atividade   do   aluno,   apontando   possíveis   inconvenientes   no desenvolvimento do projeto}
 \subsection{Data prevista de conclusão}
 \subsection{O “de acordo” com o relatório e o cronograma proposto}
 
 %==============================================================
-\section*{h. Assinaturas do aluno e do orientador e/ou coorientador, quando houver.}
+\section{Assinaturas do aluno e do orientador e/ou coorientador}
 %==============================================================
 
-\newpage
+
 \bibliographystyle{plainnat}
 \bibliography{bibliografia} 
 \vfill \hfill
