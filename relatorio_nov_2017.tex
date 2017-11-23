@@ -33,16 +33,19 @@
 
 \subsection{Objetivo científico}
 
-\textcolor{blue}{A importância do estudo de pequenos corpos al\'em da \'orbita de Netuno (transnetunianos ou TNOs, na sigla em ingl\^es) est\'a no fato de que estes s\~ao objetos que melhor conservaram em si caracter\'{\i}sticas do sistema solar primordial. Em outras palavras, por conta de suas grandes dist\^ancias do Sol trata-se de f\'osseis, relativamente inalterados da forma\c c\~ao do sistema solar.}
+A importância do estudo de pequenos corpos al\'em da \'orbita de Netuno (transnetunianos ou TNOs, na sigla em ingl\^es) est\'a no fato de que estes s\~ao objetos que melhor conservaram em si caracter\'{\i}sticas do sistema solar primordial. Em outras palavras, por conta de suas grandes dist\^ancias do Sol trata-se de f\'osseis, relativamente inalterados da forma\c c\~ao do sistema solar.
 
-\textcolor{blue}{Centauros s\~ao objetos em \'orbitas inst\'aveis entre J\'upiter e Netuno, com prov\'avel origem na regi\~ao transnetuniana. Por isso, e por suas menores dist\^ancias helioc\^entricas quando comparadas \`as dos TNOs, os Centauros s\~ao considerados similares com maior brilho dos transnetunianos. Assim, s\~ao tamb\'em relavantes em estudos ligados \`a origem e forma\c c\~ao do sistema solar externo.}
+Centauros s\~ao objetos em \'orbitas inst\'aveis entre J\'upiter e Netuno, com prov\'avel origem na regi\~ao transnetuniana. Por isso, e por suas menores dist\^ancias helioc\^entricas quando comparadas \`as dos TNOs, os Centauros s\~ao considerados similares, mais com maior brilho dos transnetunianos. Assim, s\~ao tamb\'em relavantes em estudos ligados \`a origem e forma\c c\~ao do sistema solar externo.
 
-\textcolor{blue}{Uma forma de se estudar tais objetos \'e atrav\'es de oculta\c c\~oes estelares, ou seja, da an\'alise da curva de luz oriunda da oculta\c c\~ao de uma estrela por um TNO ou Centauro. Certamente, a predi\c c\~ao de eventos de oculta\c c\~ao \'e um passo essential nesse estudo. Neste contexto, e tamb\'em visando o grande n\'umero de objetos al\'em da \'orbita de Netuno que ser\~ao descobertos por grandes levantamentos, os objetivos deste trabalho s\~ao: astrometria de imagens diretas a partir do solo de TNOs e Centauros usando o cat\'alogo Gaia; manuten\c c\~ao de base de dados com predi\c c\~oes de oculta\c c\~oes estelares para os TNOs e Centauros conhecidos; determina\c c\~ao de uma posi\c c\~ao do Centauro Chariklo atrav\'es da an\'alise de curva de luz oriunda da  oculta\c c\~ao estelar ocorrida em 24/AGO/2017.}
+Uma forma de se estudar tais objetos \'e atrav\'es de oculta\c c\~oes estelares, ou seja, da an\'alise da curva de luz obtida da oculta\c c\~ao de uma estrela por um TNO ou Centauro. Certamente, a predi\c c\~ao de eventos de oculta\c c\~ao \'e um passo essential nesse estudo. Neste contexto, e tamb\'em visando o grande n\'umero de objetos al\'em da \'orbita de Netuno que ser\~ao descobertos por grandes levantamentos, os objetivos deste trabalho s\~ao: astrometria de imagens diretas a partir do solo de TNOs e Centauros usando o cat\'alogo Gaia; manuten\c c\~ao de base de dados com predi\c c\~oes de oculta\c c\~oes estelares para os TNOs e Centauros conhecidos; determina\c c\~ao de uma posi\c c\~ao do Centauro Chariklo atrav\'es da an\'alise de curva de luz oriunda da  oculta\c c\~ao estelar ocorrida em 24/AGO/2017.
 
 \subsection{Estado da arte}
 
+A técnica de ocultação estelar por TNOs e Centauros, complementada por outras técnicas, permite obter o tamanho de esses corpos na ordem do quilômetro, caracterizar sua forma, e revelar propiedades muito interessantes como anéis \citep{2017Natur.550..219O, 2014AGUFM.P43F..01B} e atmosferas em torno de eles \citep{1538-3881-136-5-1757, 2006Natur.439...52S}. No entanto, devido a que os TNOs e Centauros são pequenos (menores que 2400 km) e dada suas distancias a partir do Sol (entre  5 - 30 ua para os centauros, e maior que 30 ua para os TNOs) possuem baixo brilho (magnitudes maiores que 20), a previsão de ocultações por esses objetos não é uma tarefa simples. 
 
-  
+Para a predição de ocultações estelares é necessário conhecer a posição das estrelas que são ocultadas e as efemerides dos corpos. As posições das estrelas são extraídas dos catalogos estelares, e as efemerides dos corpos são obtidas através do site \url{https://ssd.jpl.nasa.gov/horizons.cgi}, dado que são objetos muito distantes do Sol, não são bem determinadas. Para reduzir as incertezas em ambos os casos, foram construídos catalogos estelares realizando observações astrométricas ao longo do camino dos objetos mais brilhantes a partir do solo \citep{2010A&A...515A..32A,2014A&A...561A..37C}. No entanto, com o advento dos dados da missão astrométrica GAIA, a qual proveera a posição das estrelas na ordem dos microssegundos, estos procedimentos já não seran necessarios. 
+
+Em resumo, o estado de arte atual 
 \subsection{Metodologia}
 
 A metodologia para conseguir nosso objetivo será dividida em três partes:
@@ -54,7 +57,7 @@ A metodologia para conseguir nosso objetivo será dividida em três partes:
   \item Determinar a astrometria dos corpos utilizando o pacote PRAIA (Platform for Reduction of Astronomical Images Automatically) usando os dados do catalogo GAIA.
 \end{enumerate}
 
-\subsubsection{Metodologia para obter a astrometria atraves de ocultações estelares}
+\subsubsection{Metodologia para obter a astrometria através de ocultações estelares}
 \begin{enumerate}
   \item Analisar as curvas de luz de ocultações estelares observadas para obter os tempos de imersão e emersão (cordas).
   \item Ajustar a forma do corpo ás cordas.
@@ -163,11 +166,11 @@ Para a manutenção e atualização da base de dados de ocultações estelares h
 \subsection{Resultados parciais já obtidos}
 %===================================================================
 
-Foram determinadas a astrometria de 43 TNOs usando as imagens obtidas durante o ano 2013 pelo telescópio 2,2 m do ESO, e a primeira liberação de dados (Gaia DR1). A tabela que se segue mostra os resultados já obtidos.  
+Foram determinadas a astrometria de 43 TNOs usando as imagens obtidas durante o ano 2013 pelo telescópio 2,2 m do ESO, e a primeira liberação de dados (Gaia DR1). A tabela \ref{table:incerteza} mostra os resultados já obtidos.  
 
-\begin{table}
+\begin{table}[!h]
 \begin{center}
-\caption{A tabela mostra as incertezas associadas à posição dos TNO e Centauros ($\sigma_{\alpha} \cos \delta, \sigma_{\delta}$)}
+\caption{Incertezas associadas à posição dos TNO e Centauros ($\sigma_{\alpha} \cos \delta, \sigma_{\delta}$)}
 \vspace{0.3 cm}
 \scalebox{0.8}{
 \begin{tabular}{|l|c|c|c|} 
@@ -175,49 +178,49 @@ Foram determinadas a astrometria de 43 TNOs usando as imagens obtidas durante o 
 \hline 
 ID          & Clase &  $\sigma_{\alpha} \cos \delta $& $\sigma_{\delta} $        \\
 \hline
-1995GO      &  Cen &0.0235&0.0095\\
-1995SM55    &  TNO &0.0205&    \\
-1997CU26    &  Cen &      &    \\
-1999DE9     &  TNO &      &    \\
-1999TC36    &  TNO &      &    \\
-2000EB173   &  TNO &      &    \\
-2000QC243   &  Cen &      &    \\
-2002AW197   &  TNO &      &    \\
-2002GB10    &  Cen &      &    \\
-2002GO9     &  Cen &      &    \\
-2002KX14    &  TNO &      &    \\
-2002MS4     &  TNO &      &    \\
-2002TC302   &  TNO &      &    \\
-2002UX25    &  TNO &      &    \\
-2002VE95    &  TNO &      &    \\
-2002WC19    &  TNO &      &    \\
-2003AZ84    &  TNO &      &    \\
-2003FY128   &  TNO &      &    \\
-2003MW12    &  TNO &      &    \\
-2003OP32    &  TNO &      &    \\
-2003UZ413   &  TNO &      &    \\
-2003VS2     &  TNO &      &    \\
-2004GV9     &  TNO &      &    \\
-2004NT33    &  TNO &      &    \\
-2004PF115   &  TNO &      &    \\
-2004SB60    &  TNO &      &    \\
-2004TY364   &  TNO &      &    \\
-2004UX10    &  TNO &      &    \\
-2005CC79    &  Cen &      &    \\
-2005QU182   &  TNO &      &    \\
-2005RM43    &  TNO &      &    \\
-2005RN43    &  TNO &      &    \\
-2005RR43    &  TNO &      &    \\
-2005UQ513   &  TNO &      &    \\
-2007JH43    &  TNO &      &    \\
-2007JJ43    &  TNO &      &    \\
-2007OR10    &  TNO &      &    \\
-2007UK126   &  TNO &      &    \\
-2008OG19    &  TNO &      &    \\
-2010EK139   &  TNO &      &    \\
-IXION       &  TNO &      &    \\
-ORCUS       &  TNO &      &    \\
-QUAOAR      &  TNO &      &    \\
+1995GO      &  Cen &  0.024 & 0.009 \\
+1995SM55    &  TNO &  0.020 & 0.029 \\
+1997CU26    &  Cen &  0.006 & 0.007 \\
+1999DE9     &  TNO &  0.006 & 0.010 \\
+1999TC36    &  TNO &  0.012 & 0.015 \\
+2000EB173   &  TNO &  0.018 & 0.009 \\
+2000QC243   &  Cen &  0.009 & 0.015 \\
+2002AW197   &  TNO &  0.009 & 0.005 \\
+2002GB10    &  Cen &  0.007 & 0.002 \\
+2002GO9     &  Cen &  0.008 & 0.012 \\
+2002KX14    &  TNO &  0.016 & 0.007 \\
+2002MS4     &  TNO &  0.001 & 0.002 \\
+2002TC302   &  TNO &  0.011 & 0.010 \\
+2002UX25    &  TNO &  0.013 & 0.014 \\
+2002VE95    &  TNO &  0.013 & 0.008 \\
+2002WC19    &  TNO &  0.009 & 0.017 \\
+2003AZ84    &  TNO &  0.024 & 0.023 \\
+2003FY128   &  TNO &  0.011 & 0.014 \\
+2003MW12    &  TNO &  0.021 & 0.019 \\
+2003OP32    &  TNO &  0.009 & 0.005 \\
+2003UZ413   &  TNO &  0.009 & 0.009 \\
+2003VS2     &  TNO &  0.019 & 0.021 \\
+2004GV9     &  TNO &  0.017 & 0.011 \\
+2004NT33    &  TNO &  0.009 & 0.009 \\
+2004PF115   &  TNO &  0.018 & 0.011 \\
+2004SB60    &  TNO &  0.217 & 0.035 \\
+2004TY364   &  TNO &  0.007 & 0.006 \\
+2004UX10    &  TNO &  0.007 & 0.017 \\
+2005CC79    &  Cen &  0.116 & 0.019 \\
+2005QU182   &  TNO &  0.010 & 0.012 \\
+2005RM43    &  TNO &  0.009 & 0.005 \\
+2005RN43    &  TNO &  0.006 & 0.006 \\
+2005RR43    &  TNO &  0.008 & 0.013 \\
+2005UQ513   &  TNO &  0.014 & 0.014 \\
+2007JH43    &  TNO &  0.008 & 0.009 \\
+2007JJ43    &  TNO &  0.010 & 0.009 \\
+2007OR10    &  TNO &  0.012 & 0.012 \\
+2007UK126   &  TNO &  0.012 & 0.009 \\
+2008OG19    &  TNO &  0.010 & 0.006 \\
+2010EK139   &  TNO &  0.064 & 0.023 \\
+IXION       &  TNO &  0.007 & 0.007 \\
+ORCUS       &  TNO &  0.013 & 0.014 \\
+QUAOAR      &  TNO &  0.025 & 0.024 \\
 \hline
 \end{tabular}}
 \label{table:incerteza}
@@ -288,7 +291,7 @@ Segundo as propostas, em seguida se mostra uma tabela com o cronograma de ativid
 \section{Assinaturas do aluno e do orientador e/ou coorientador}
 %==============================================================
 
-
+\newpage
 \bibliographystyle{plainnat}
 \bibliography{bibliografia} 
 \vfill \hfill
