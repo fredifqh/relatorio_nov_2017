@@ -1,0 +1,14 @@
+#!/bin/bash
+
+awk '
+        !/^#/ {
+        		c4 += $1
+        		c5 += $2
+                n += 1
+                n != 0
+        }
+        /^#$/ {
+                printf ( "%.3f %.3f\n", (c4/n), (c5/n))
+                c4 = c5 = n = 0
+        }
+' result_stdv.txt
